@@ -19,7 +19,7 @@ function clicked(string) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 $(document).ready(function() { //or you can use $(function(){ jQuery goes here })
-    $("#changeColorButton").clicked(function(){
+    $("#changeColorButton").click(function(){
         alert("change color pressed");
         newColor = $("#newColor").val();
         $("#div1").css("background-color", newColor);
