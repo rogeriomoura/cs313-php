@@ -21,7 +21,7 @@ function clicked(string) {
 $(document).ready(function() { //or you can use $(function(){ jQuery goes here })
     $("#changeColorButton").clicked(function(){
         alert("change color pressed");
-        newColor = $("#newColor").value;
+        newColor = $("#newColor").val();
         $("#div1").css("background-color", newColor);
     });
 });
