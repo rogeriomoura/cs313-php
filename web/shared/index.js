@@ -20,6 +20,7 @@ function clicked(string) {
 </head>
 $(document).ready(function() { //or you can use $(function(){ jQuery goes here })
     $("#changeColorButton").clicked(function(){
-        $("#div1").css("background-color", $("#newColor").value)
+        newColor = $("#newColor").value;
+        $("#div1").css("background-color", newColor);
     });
 });
