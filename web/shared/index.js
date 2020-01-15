@@ -19,13 +19,13 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
     $("button").click(function(button){
         alert("CLICKED!!!");
         if (button == "button1") {
-        document.getElementById("button1").innerHTML = "Button 1 clicked!";
+        ("#button1").innerHTML = "Button 1 clicked!";
         }
         if (button == "button2") {
-        document.getElementById("button2").innerHTML = "Button 2 clicked!";
+        $("#button2").innerHTML = "Button 2 clicked!";
         }
         if (button == "button3") {
-        document.getElementById("button3").innerHTML = "Button 3 clicked!";
+        $("#button3").innerHTML = "Button 3 clicked!";
         }
-    })
-})
+    });
+});
