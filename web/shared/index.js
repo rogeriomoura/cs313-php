@@ -17,9 +17,8 @@
 //     newColor = document.getElementById("newColor").value;
 //     document.getElementById("div1").style.background = newColor;
 // }
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 $(document).ready(function() { //or you can use $(function(){ jQuery goes here })
-    $("#changeColorButton").click(function(){
+    $("#changeColorButton").click(function() {
         alert("change color pressed");
         var newColor = $("#newColor").text();
         $("#div1").css("background", newColor);
