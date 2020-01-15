@@ -20,7 +20,7 @@
 $(document).ready(function() { //or you can use $(function(){ jQuery goes here })
     $("#changeColorButton").click(function() {
         alert("change color pressed");
-        var newColor = $("#newColor").text();
+        var newColor = $("#newColor").val();
         $("#div1").css("background", newColor);
     });
 });
