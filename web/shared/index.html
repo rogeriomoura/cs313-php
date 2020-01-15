@@ -6,25 +6,32 @@
    <title>WHAT TEAM?</title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
    <script src=index.js></script>
 </head>
 <body>
    <h1>Wildcats</h1>
    <div class="divHover" id="div1">
+      <br>
       <button onclick="clicked('button1')" id="button1" class="divHover">Click Me</button>
       <br>
-      New Color: <input type="text" id="newColor">
+      <br>
+      Enter New Color:
+      <br>
+      <input type="text" id="newColor">
       <button class="divHover" id="changeColorButton">Change Color</button>
    </div>
-   <div class="divHover">
-      <button onclick="clicked('button2')" id="button2" class="divHover">Click Me</button>
+   <div class="divHover" id="div2">
       <br>
       <button id="fadeButton">Fade 3rd div in and out</button>
    </div>
    <div class="divHover" id="div3">
+      <br>
       <p>Hello, I'm div number 3, click on the button above to make me fade in and out!</p>
       <button onclick="clicked('button3')" id="button3" class="divHover">Click Me</button>
+      <br>
    </div>
 </body>
 </html>

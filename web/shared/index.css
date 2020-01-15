@@ -1,11 +1,26 @@
 body {
-   background-color: whitesmoke;
-}
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: whitesmoke;
+    margin-left: 4em;
+    margin-right: 4em;
+  }
 
 h1 {
    color: red;
    text-align: center;
    font-size: 40px;
+   margin-top: 0;
+   margin-bottom: 0.5rem;
+}
+
+div {
+    margin-top: 15px;
 }
 
 .divHover {
@@ -16,3 +31,4 @@ h1 {
 .divHover:hover {
     font-weight: bold;
 }
+
