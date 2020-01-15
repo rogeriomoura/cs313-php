@@ -1,6 +1,6 @@
-<head>
+/* <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
+</head> */
 // function clicked(string) {
 //     alert("CLICKED!!!");
 //     if (string == "button1") {
