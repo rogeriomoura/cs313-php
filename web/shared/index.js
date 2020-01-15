@@ -1,6 +1,3 @@
-/* <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head> */
 function clicked(string) {
     alert("CLICKED!!!");
     if (string == "button1") {
@@ -21,5 +18,9 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
     $("#changeColorButton").click(function() {
         var newColor = $("#newColor").val();
         $("#div1").css("background", newColor);
+    });
+
+    $("#fadeButton").click(function(){
+        $("#div3").fadeToggle("slow");
     });
 });
