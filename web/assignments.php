@@ -16,7 +16,7 @@
     </div>
     <div class="row">
         <a class="col shadow centered buttonBox border" href="index.php">Home</a>
-        <a class="col shadow centered buttonBox border" href="resume.html">Resume</a>
+        <a class="col shadow centered buttonBox border" href="Rogerio-Moura-resume.pdf">Resume</a>
         <a class="col shadow centered buttonBox border" href="/php-project/ride-share.php">Ride Share</a>
       </div>
     <div class="container-fluid centered">
