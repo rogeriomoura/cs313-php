@@ -36,6 +36,6 @@
 
 
 <?php
-  echo "Hello World! With PHP";
+  //echo "Hello World! With PHP";
   //phpinfo();
 ?>
