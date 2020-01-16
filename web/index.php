@@ -12,7 +12,7 @@
     </head>
     <body>
       <div class="container-fluid headerBox centered">
-        <h1>Hello! What assignment are you looking for?</h1>
+        <h1>Welcome to Rogerio Moura's Online Portfolio</h1>
       </div>
       <div class="row">
         <a class="col shadow centered buttonBox border" href="assignments.html">Assignments</a>
