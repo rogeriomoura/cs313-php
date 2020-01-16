@@ -22,7 +22,7 @@
       <div class="container centered">
         <h1 class="p-3">This is me and my beautiful wife Kristen</h1>
         <br>
-        <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded float-left img-fluid">
+        <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded img-fluid">
       </div>
       <div class="container centered">
         <ul>
