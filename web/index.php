@@ -15,9 +15,9 @@
         <h1>Hello! What assignment are you looking for?</h1>
       </div>
       <div class="row">
-        <div class="col shadow centered buttonBox border">Assignments</div>
-        <div class="col shadow centered buttonBox border">Resume</div>
-        <div class="col shadow centered buttonBox border">Ride Share</div>
+        <div class="col shadow centered buttonBox border" id="assignments">Assignments</div>
+        <div class="col shadow centered buttonBox border" id="resume">Resume</div>
+        <div class="col shadow centered buttonBox border" id="rideShare">Ride Share</div>
       </div>
       <div class="container centered">
         <h1 class="p-3">This is me and my beautiful wife Kristen</h1>
