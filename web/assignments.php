@@ -20,7 +20,7 @@
         <a class="col shadow centered buttonBox border" href="/php-project/ride-share.php">Ride Share</a>
       </div>
     <div class="container-fluid centered">
-        <h1>What assignment are you looking for?</h1>
+        <h3>What assignment are you looking for?</h3>
         <br>
         <ul>
           <li><a href="w1/hello.html">Hello World Page</a></li>
