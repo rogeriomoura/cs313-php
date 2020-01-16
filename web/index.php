@@ -25,7 +25,7 @@
         <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded img-resize-50-l">
       </div>
       <br>
-      <div class="container-fluid centered row">
+      <div class="container-fluid row centered">
         <ul>
           <li><a href="hello.html">Hello World Page</a></li>
           <li><a href="shared/index.html">Team Activity Week 1</a></li>
