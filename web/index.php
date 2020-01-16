@@ -11,13 +11,13 @@
       <title>Rogerio Moura</title>
     </head>
     <body>
-      <div class="row fixed-top">
+      <div class="container-fluid headerBox centered">
+        <h1>Hello! What assignment are you looking for?</h1>
+      </div>
+      <div class="row">
         <div class="col shadow centered buttonBox border">Assignments</div>
         <div class="col shadow centered buttonBox border">Something</div>
         <div class="col shadow centered buttonBox border">Ride Share</div>
-      </div>
-      <div class="container-fluid headerBox centered">
-        <h1>Hello! What assignment are you looking for?</h1>
       </div>
       <div class="container centered">
         <ul>
