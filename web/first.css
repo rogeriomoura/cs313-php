@@ -2,6 +2,10 @@ body {
     background-color: whitesmoke;
 }
 
+.headerBox {
+    background-color: lightgray;
+}
+
 .centered {
     text-align: center;
     list-style-position: inside;
