@@ -14,6 +14,11 @@
     <div class="container-fluid headerBox centered">
         <h1>Welcome to Rogerio Moura's Online Portfolio</h1>
     </div>
+    <div class="row">
+        <a class="col shadow centered buttonBox border" href="index.php">Home</a>
+        <a class="col shadow centered buttonBox border" href="resume.html">Resume</a>
+        <a class="col shadow centered buttonBox border" href="/php-project/ride-share.php">Ride Share</a>
+      </div>
     <div class="container-fluid centered">
         <h1>What assignment are you looking for?</h1>
         <br>
