@@ -12,7 +12,12 @@
     </head>
     <body>
       <div class="container-fluid headerBox centered">
-        <h1 class="mx-auto">Hello! What assignment are you looking for?</h1>
+        <h1>Hello! What assignment are you looking for?</h1>
+      </div>
+      <div class="row">
+        <div class="col">Assignments</div>
+        <div class="col">Something</div>
+        <div class="col">Ride Share</div>
       </div>
       <div class="container centered">
         <ul>
