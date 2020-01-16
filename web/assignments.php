@@ -14,8 +14,8 @@
     <div class="container-fluid headerBox centered">
         <h1>Welcome to Rogerio Moura's Online Portfolio</h1>
     </div>
-    <div class="container-fluid row centered">
-        <ul class="centered">
+    <div class="container-fluid centered">
+        <ul>
           <li><a href="w1/hello.html">Hello World Page</a></li>
           <li><a href="shared/index.html">Team Activity Week 1</a></li>
         </ul>
