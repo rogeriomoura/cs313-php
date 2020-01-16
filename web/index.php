@@ -15,9 +15,9 @@
         <h1>Hello! What assignment are you looking for?</h1>
       </div>
       <div class="row">
-        <div class="col">Assignments</div>
-        <div class="col">Something</div>
-        <div class="col">Ride Share</div>
+        <div class="col centered">Assignments</div>
+        <div class="col centered">Something</div>
+        <div class="col centered">Ride Share</div>
       </div>
       <div class="container centered">
         <ul>
