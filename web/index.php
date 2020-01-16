@@ -31,13 +31,6 @@
          to be my eternal companion and marry me. Luckly she saw something special in me that I cannot understand, but she said 
          yes! We got married in the LDS Mt. Timpanogos Temple, UT, and had our reception up in Montana, in her hometown.</p>
       </div>
-      <br>
-      <div class="container-fluid row centered">
-        <ul>
-          <li><a href="w1/hello.html">Hello World Page</a></li>
-          <li><a href="shared/index.html">Team Activity Week 1</a></li>
-        </ul>
-      </div>
     </body>
 </html>
 
