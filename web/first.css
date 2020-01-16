@@ -12,10 +12,6 @@ body {
     color: black;
 }
 
-a {
-    color: black;
-}
-
 .buttonBox:hover {
     font-weight: bold;
     background-color: lightgray;
