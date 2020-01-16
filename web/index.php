@@ -11,11 +11,11 @@
       <title>Rogerio Moura</title>
     </head>
     <body>
-      <div class="container-fluid headerBox mx-auto">
-        <h1>Hello! What assignment are you looking for?</h1>
+      <div class="container-fluid headerBox">
+        <h1 class="mx-auto">Hello! What assignment are you looking for?</h1>
       </div>
-      <div class="mx-auto container">
-        <ul>
+      <div class="container">
+        <ul class="mx-auto">
           <li><a href="hello.html">Hello World Page</a></li>
           <li><a href="shared/index.html">Team Activity Week 1</a></li>
         </ul>
