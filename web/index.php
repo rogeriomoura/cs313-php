@@ -15,7 +15,7 @@
         <h1>Hello! What assignment are you looking for?</h1>
       </div>
       <div class="row">
-        <a class="col shadow centered buttonBox border" id="assignments" href="assignments.html">Assignments</a>
+        <a class="col shadow centered border buttonBox" id="assignments" href="assignments.html">Assignments</a>
         <a class="col shadow centered buttonBox border" id="resume" href="resume.html">Resume</a>
         <a class="col shadow centered buttonBox border" id="rideShare" href="php-project/ride-share.php">Ride Share</a>
       </div>
