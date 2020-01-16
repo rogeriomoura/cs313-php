@@ -17,7 +17,7 @@
       <div class="row">
         <a class="col shadow centered buttonBox border" href="assignments.html">Assignments</a>
         <a class="col shadow centered buttonBox border" href="resume.html">Resume</a>
-        <a class="col shadow centered buttonBox border" href="php-project/ride-share.php">Ride Share</a>
+        <a class="col shadow centered buttonBox border" href="/php-project/ride-share.php">Ride Share</a>
       </div>
       <div class="container-fluid centered">
         <h1 class="p-3">Rio & Kristen</h1>
