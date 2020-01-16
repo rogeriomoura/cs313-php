@@ -11,7 +11,7 @@
       <title>Rogerio Moura</title>
     </head>
     <body>
-      <div class=".container-fluid">
+      <div class="container-fluid">
         <h1 class="centered">Hello! What assignment are you looking for?</h1>
       </div>
       <ul class="centered">
