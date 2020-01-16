@@ -21,7 +21,8 @@ body {
     list-style-position: inside;
 }
 
-.img-resize-50 {
+.img-resize-50-l {
     max-width: 50%;
     max-height: auto;
+    float: left;
 }
