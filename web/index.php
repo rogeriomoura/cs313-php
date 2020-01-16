@@ -22,7 +22,7 @@
       <div class="container-fluid centered">
         <h1 class="p-3">Rio & Kristen</h1>
         <br>
-        <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded img-resize-50-l">
+        <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded img-resize-30-l">
         <p>I've met my beautiful wife at BYU-I. It was a nice game night with some friends when their fhe sisters, a BYU-I term
          for an assigned group of friends by the church, invited them over to eat some soup. I happen to be there and go with 
          them crashing their soup night, and that happen to be the apartment that Kristen was living that semester. After doing 
@@ -45,5 +45,4 @@
 <?php
   echo "Hello World! With PHP";
   //phpinfo();
-
 ?>

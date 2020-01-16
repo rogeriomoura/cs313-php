@@ -23,8 +23,8 @@ body {
     list-style-position: inside;
 }
 
-.img-resize-50-l {
-    max-width: 50%;
+.img-resize-30-l {
+    max-width: 30%;
     max-height: auto;
     float: left;
 }
