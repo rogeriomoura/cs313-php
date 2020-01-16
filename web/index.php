@@ -15,7 +15,7 @@
         <h1>Welcome to Rogerio Moura's Online Portfolio</h1>
       </div>
       <div class="row">
-        <a class="col shadow centered buttonBox border" href="assignments.html">Assignments</a>
+        <a class="col shadow centered buttonBox border" href="assignments.php">Assignments</a>
         <a class="col shadow centered buttonBox border" href="resume.html">Resume</a>
         <a class="col shadow centered buttonBox border" href="/php-project/ride-share.php">Ride Share</a>
       </div>
