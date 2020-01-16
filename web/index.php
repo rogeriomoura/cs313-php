@@ -16,11 +16,11 @@
       </div>
       <div class="row">
         <div class="col shadow centered buttonBox border">Assignments</div>
-        <div class="col shadow centered buttonBox border">Something</div>
+        <div class="col shadow centered buttonBox border">Resume</div>
         <div class="col shadow centered buttonBox border">Ride Share</div>
       </div>
       <div class="container centered">
-        <h1 class="p-3">This is ME</h1>
+        <h1 class="p-3">This is me and my beautiful wife Kristen</h1>
         <br>
         <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded float-left img-fluid">
       </div>
@@ -35,7 +35,7 @@
 
 
 <?php
-  echo "Hello World!";
+  echo "Hello World! With PHP";
   //phpinfo();
 
 ?>
