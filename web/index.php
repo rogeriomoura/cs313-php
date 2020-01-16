@@ -19,7 +19,7 @@
         <div class="col shadow centered buttonBox border" id="resume">Resume</div>
         <div class="col shadow centered buttonBox border" id="rideShare">Ride Share</div>
       </div>
-      <div class="container-fluid centered row">
+      <div class="container-fluid centered">
         <h1 class="p-3">Rio & Kristen</h1>
         <br>
         <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded img-resize-50-l">
