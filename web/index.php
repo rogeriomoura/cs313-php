@@ -15,9 +15,9 @@
         <h1>Hello! What assignment are you looking for?</h1>
       </div>
       <div class="row">
-        <div class="col shadow centered buttonBox border" id="assignments">Assignments</div>
-        <div class="col shadow centered buttonBox border" id="resume">Resume</div>
-        <div class="col shadow centered buttonBox border" id="rideShare">Ride Share</div>
+        <a class="col shadow centered buttonBox border" id="assignments" href="assignments.html">Assignments</div>
+        <a class="col shadow centered buttonBox border" id="resume" href="resume.html">Resume</div>
+        <a class="col shadow centered buttonBox border" id="rideShare" href="php-project/ride-share.php">Ride Share</div>
       </div>
       <div class="container-fluid centered">
         <h1 class="p-3">Rio & Kristen</h1>
@@ -34,7 +34,7 @@
       <br>
       <div class="container-fluid row centered">
         <ul>
-          <li><a href="hello.html">Hello World Page</a></li>
+          <li><a href="w1/hello.html">Hello World Page</a></li>
           <li><a href="shared/index.html">Team Activity Week 1</a></li>
         </ul>
       </div>
