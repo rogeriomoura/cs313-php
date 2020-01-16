@@ -22,7 +22,7 @@
       <div class="container centered">
         <h1>This is ME</h1>
         <br>
-        <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded">
+        <img src="images/image1.jpg" alt="A picture of Rio and his wife Kristen" class="rounded float-left img-fluid">
       </div>
       <div class="container centered">
         <ul>
