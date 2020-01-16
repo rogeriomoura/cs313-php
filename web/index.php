@@ -15,9 +15,9 @@
         <h1>Hello! What assignment are you looking for?</h1>
       </div>
       <div class="row">
-        <a class="col shadow centered buttonBox border" href="assignments.html"><p>Assignments</p></a>
-        <a class="col shadow centered buttonBox border" href="resume.html"><p>Resume</p></a>
-        <a class="col shadow centered buttonBox border" href="php-project/ride-share.php"><p>Ride Share</p></a>
+        <a class="col shadow centered buttonBox border" href="assignments.html">Assignments</a>
+        <a class="col shadow centered buttonBox border" href="resume.html">Resume</a>
+        <a class="col shadow centered buttonBox border" href="php-project/ride-share.php">Ride Share</a>
       </div>
       <div class="container-fluid centered">
         <h1 class="p-3">Rio & Kristen</h1>
