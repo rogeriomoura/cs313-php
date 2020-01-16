@@ -15,6 +15,7 @@ body {
 .buttonBox:hover {
     font-weight: bold;
     background-color: lightgray;
+    color: black;
 }
 
 .centered {
