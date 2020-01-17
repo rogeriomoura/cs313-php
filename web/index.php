@@ -11,9 +11,11 @@
       <title>Rogerio Moura</title>
     </head>
     <body>
-      <div class="container-fluid headerBox centered">
-        <h1>Welcome to Rogerio Moura's Online Portfolio</h1>
-      </div>
+      <header class="container-fluid headerBox centered">
+        <div>
+          <h1>Welcome to Rogerio Moura's Online Portfolio</h1>
+        </div>
+      </header>
       <div class="row">
         <a class="col shadow centered buttonBox border" href="assignments.php">Assignments</a>
         <a class="col shadow centered buttonBox border" href="Rogerio-Moura-resume.pdf">Resume</a>
