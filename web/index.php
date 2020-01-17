@@ -31,6 +31,12 @@
          to be my eternal companion and marry me. Luckly she saw something special in me that I cannot understand, but she said 
          yes! We got married in the LDS Mt. Timpanogos Temple, UT, and had our reception up in Montana, in her hometown.</p>
       </div>
+      <footer class="centered">
+        <div>
+          <p>Today is <?php echo date("l"); ?></p>
+          <p>The server time is <?php date("h:i:sa") ?></p>
+        </div>
+      </footer>
     </body>
 </html>
 
