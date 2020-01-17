@@ -32,7 +32,7 @@
          yes! We got married in the LDS Mt. Timpanogos Temple, UT, and had our reception up in Montana, in her hometown.</p>
       </div>
       <footer class="row container-fluid centered">
-        <div class="col navbar navbar-expand-sm fixed-bottom">
+        <div class="col">
           <?php date_default_timezone_set("America/Boise"); ?>
           <p>Today is <?php echo date("l"); ?></p>
           <p>The time is <?php echo date("h:ia"); ?></p>
