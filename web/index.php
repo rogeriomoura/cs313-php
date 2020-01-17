@@ -15,12 +15,12 @@
         <div>
           <h1>Welcome to Rogerio Moura's Online Portfolio</h1>
         </div>
-        <div class="row">
-          <a class="col shadow centered buttonBox border" href="assignments.php">Assignments</a>
-          <a class="col shadow centered buttonBox border" href="Rogerio-Moura-resume.pdf">Resume</a>
-          <a class="col shadow centered buttonBox border" href="under-construction.php">Ride Share</a>
-        </div>
       </header>
+      <div class="row">
+        <a class="col shadow centered buttonBox border" href="assignments.php">Assignments</a>
+        <a class="col shadow centered buttonBox border" href="Rogerio-Moura-resume.pdf">Resume</a>
+        <a class="col shadow centered buttonBox border" href="under-construction.php">Ride Share</a>
+      </div>
       <div class="container-fluid centered">
         <h1 class="p-3">Rio & Kristen</h1>
         <br>
