@@ -33,15 +33,10 @@
       </div>
       <footer class="container-fluid centered">
         <div>
+          <?php date_default_timezone_set("America/Boise"); ?>
           <p>Today is <?php echo date("l"); ?></p>
-          <p>The server time is <?php echo date("h:i:sa"); ?></p>
+          <p>The time is <?php echo date("h:i:sa"); ?></p>
         </div>
       </footer>
     </body>
 </html>
-
-
-<?php
-  //echo "Hello World! With PHP";
-  //phpinfo();
-?>
