@@ -28,7 +28,7 @@
         <p>I've met my beautiful wife at BYU-I. It was a nice game night with some friends when their fhe sisters, a BYU-I term
          for an assigned group of friends by the church, invited them over to eat some soup. I happen to be there and go with 
          them crashing their soup night, and that happen to be the apartment that Kristen was living that semester. After doing 
-         their dishes to look cool and impress the girls, we went back to play some board games.<br>After a few months of seenig 
+         their dishes to look cool and impress the girls, we went back to play some board games.<br>After a few months of seeing 
          her every now and then I decided to invite her on a date!<br>We dated for about 4 months before I told her I wanted her 
          to be my eternal companion and marry me. Luckly she saw something special in me that I cannot understand, but she said 
          yes! We got married in the LDS Mt. Timpanogos Temple, UT, and had our reception up in Montana, in her hometown.</p>
