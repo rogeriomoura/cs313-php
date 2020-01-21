@@ -13,7 +13,7 @@
     <title>Ride Board</title>
 </head>
 <body>
-    <php? include '../../php-projects/header.php'; ?>
+    <?php include 'header.php'; ?>
 
 
 </body>
