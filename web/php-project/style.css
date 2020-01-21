@@ -26,6 +26,6 @@
 
 .buttonBox { }
 
-.buttonBox:hover {
+.buttonBox:active {
     transform: translateY(4px);
 }
