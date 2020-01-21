@@ -14,7 +14,13 @@
 </head>
 <body>
     <?php include 'header.php'; ?>
-    <div class=""></div>
+    <div>
+        <h1 class="centered">What are you looking for?</h1>
+        <div class="clearfix">
+            <button class="float-left">Post a Ride</button>
+            <button class="float-right">Search a Ride</button>
+        </div>
+    </div>
     <?php include 'footer.php'; ?>
 </body>
 </html>
