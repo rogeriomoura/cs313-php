@@ -18,10 +18,10 @@
         <h1 class="centered">What are you looking for?</h1>
         <div class="row p-3">
             <div class="col"></div>
-            <div class="col centered border shadow">
+            <div class="col centered border shadow rounded-circle">
                 <img src="../images/driver.png" alt="offer ride" class="rounded img-resize-90">
             </div>
-            <div class="col centered border shadow">
+            <div class="col centered border shadow rounded-circle">
                 <img src="../images/rider.png" alt="search ride" class="rounded img-resize-90">
             </div>
             <div class="col"></div>
