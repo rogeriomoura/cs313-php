@@ -21,12 +21,12 @@
             <div class="col centered border crazydiv">
                 <img src="../images/driver.png" alt="offer ride" class="rounded img-resize-90">
                 <br>
-                <p>Offer Ride</p>
+                <p class="centered">Offer Ride</p>
             </div>
             <div class="col centered border crazydiv">
                 <img src="../images/rider.png" alt="search ride" class="rounded img-resize-90">
                 <br>
-                <p>Search Ride</p>
+                <p class="centered">Search Ride</p>
             </div>
             <div class="col"></div>
         </div>
