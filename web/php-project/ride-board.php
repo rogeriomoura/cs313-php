@@ -23,7 +23,7 @@
                 <br>
                 <p>Offer Ride</p>
             </div>
-            <div class="col centered border">
+            <div class="col centered border" style="position: relative">
                 <img src="../images/rider.png" alt="search ride" class="rounded img-resize-90">
                 <br>
                 <p class="content">Search Ride</p>
