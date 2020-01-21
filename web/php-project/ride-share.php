@@ -17,11 +17,11 @@
     <div>
         <h1 class="centered">What are you looking for?</h1>
         <div class="row">
-            <div class="col"></div>
+            <div class="col centered shadow"></div>
             <div class="col">
                 <button>Post a Ride</button>
             </div>
-            <div class="col">
+            <div class="col centered shadow">
                 <button>Post a Ride</button>
             </div>
             <div class="col"></div>
