@@ -20,6 +20,7 @@
             <div class="col"></div>
             <div class="col centered border">
                 <img src="../images/driver.jpg" alt="offer ride" class="rounded img-resize-30-l">
+                <br>
                 <p>Offer Ride</p>
             </div>
             <div class="col centered border">
