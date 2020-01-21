@@ -16,9 +16,15 @@
     <?php include 'header.php'; ?>
     <div>
         <h1 class="centered">What are you looking for?</h1>
-        <div class="clearfix">
-            <button class="float-left">Post a Ride</button>
-            <button class="float-right">Search a Ride</button>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <button>Post a Ride</button>
+            </div>
+            <div class="col">
+                <button>Post a Ride</button>
+            </div>
+            <div class="col"></div>
         </div>
     </div>
     <?php include 'footer.php'; ?>
