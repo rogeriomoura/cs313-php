@@ -18,3 +18,8 @@
     max-width: 90%;
     max-height: auto;
 }
+
+.content {
+    position: relative;
+    bottom: 0;
+}
