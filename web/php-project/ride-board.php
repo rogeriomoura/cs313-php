@@ -21,7 +21,7 @@
             <div class="col centered border">
                 <img src="../images/driver.png" alt="offer ride" class="rounded img-resize-90">
                 <br>
-                <p>Offer Ride</p>
+                <p class="fixed-bottom">Offer Ride</p>
             </div>
             <div class="col centered border">
                 <img src="../images/rider.png" alt="search ride" class="rounded img-resize-90">
