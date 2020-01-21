@@ -13,6 +13,10 @@
     <title>Ride Board</title>
 </head>
 <body>
-    
+    <header class="headerBox">
+        <h1>Ride Board</h1>
+        <br>
+        <p>A place to connect people and rides</p>
+    </header>
 </body>
 </html>
