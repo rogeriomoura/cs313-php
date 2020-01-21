@@ -17,8 +17,8 @@
     <div>
         <h1 class="centered">What are you looking for?</h1>
         <div class="row">
-            <div class="col centered border"></div>
-            <div class="col">
+            <div class="col"></div>
+            <div class="col centered border">
                 <button>Post a Ride</button>
             </div>
             <div class="col centered border">
