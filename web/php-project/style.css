@@ -13,3 +13,8 @@
     max-height: auto;
     float: left;
 }
+
+.img-resize-90 {
+    max-width: 90%;
+    max-height: auto;
+}

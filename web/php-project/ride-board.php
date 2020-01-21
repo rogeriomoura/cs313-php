@@ -19,12 +19,12 @@
         <div class="row p-3">
             <div class="col"></div>
             <div class="col centered border">
-                <img src="../images/driver.png" alt="offer ride" class="rounded img-resize-30-l">
+                <img src="../images/driver.png" alt="offer ride" class="rounded img-resize-90">
                 <br>
                 <p>Offer Ride</p>
             </div>
             <div class="col centered border">
-                <img src="../images/rider.png" alt="search ride" class="rounded img-resize-30-l">
+                <img src="../images/rider.png" alt="search ride" class="rounded img-resize-90">
                 <br>
                 <p>Search Ride</p>
             </div>
