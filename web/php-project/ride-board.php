@@ -19,16 +19,13 @@
         <div class="row p-3">
             <div class="col"></div>
             <div class="col centered border">
-                <button>
-                    <img src="../images/driver.jpg" alt="offer ride" class="rounded img-resize-30-l">
-                    Offer Ride
-                </button>
+                <img src="../images/driver.jpg" alt="offer ride" class="rounded img-resize-30-l">
+                <p>Offer Ride</p>
             </div>
             <div class="col centered border">
-                <button>
-                    <img src="../images/rider.jpg" alt="search ride" class="rounded img-resize-30-l">
-                    Search Ride
-                </button>
+                <img src="../images/rider.jpg" alt="search ride" class="rounded img-resize-30-l">
+                <br>
+                <p>Search Ride</p>
             </div>
             <div class="col"></div>
         </div>
