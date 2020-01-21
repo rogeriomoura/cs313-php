@@ -16,7 +16,7 @@
     <?php include 'header.php'; ?>
     <div>
         <h1 class="centered">What are you looking for?</h1>
-        <div class="row">
+        <div class="row p-3">
             <div class="col"></div>
             <div class="col centered border">
                 <button>Post a Ride</button>
