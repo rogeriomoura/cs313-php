@@ -19,10 +19,16 @@
         <div class="row p-3">
             <div class="col"></div>
             <div class="col centered border">
-                <button>Post a Ride</button>
+                <button>
+                    <img src="../images/driver.jpg" alt="offer ride" class="rounded img-resize-30-l">
+                    Offer Ride
+                </button>
             </div>
             <div class="col centered border">
-                <button>Post a Ride</button>
+                <button>
+                    <img src="../images/rider.jpg" alt="search ride" class="rounded img-resize-30-l">
+                    Search Ride
+                </button>
             </div>
             <div class="col"></div>
         </div>

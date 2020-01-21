@@ -7,3 +7,9 @@
 .centered {
     text-align: center;
 }
+
+.img-resize-30-l {
+    max-width: 30%;
+    max-height: auto;
+    float: left;
+}
