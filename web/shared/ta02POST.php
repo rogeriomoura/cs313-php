@@ -11,7 +11,7 @@
     echo "Major: $major <br><br>";
     echo "Visited Countries: <br>";
     $continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Austrailia", "AF" => "Africa", "AN" => "Antarctica");
-    foreach(htmlspecialchars("" . $_POST["visitedContinents"]) as $value)
+    foreach($_POST["visitedContinents"] as $value)
     {
         echo $continents[$value] . "<br>";
     }
