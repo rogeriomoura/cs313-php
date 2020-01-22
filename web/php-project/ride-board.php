@@ -16,6 +16,7 @@
     <?php include 'header.php'; ?>
     <div>
         <h1 class="centered">What are you looking for?</h1>
+        <h3 class="centered">Offer a ride || Search for a ride</h3>
         <div class="row p-3">
             <div class="col"></div>
             <div class="col centered border shadow buttonBox">
