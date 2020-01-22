@@ -13,7 +13,7 @@
     $continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Austrailia", "AF" => "Africa", "AN" => "Antarctica");
     foreach(htmlspecialchars($_POST["visitedContinents"]) as $value)
     {
-        echo "$continents[$value]<br>";
+        echo $continents[$value] . "<br>";
     }
     echo "<br>Comments: $comments";
     echo "<br>";
