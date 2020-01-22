@@ -21,9 +21,9 @@
             <div>
                 
             <?php 
-            $majors = array("CS" => "Computer Science", "WDD" => "Web Design and Development", "CIT" => "Computer Information Technology", "CE" => "Computer Engineering");
+            $majors = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
             foreach($majors as $i) {
-                echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$majors\">$i<br><br>";
+                echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$i\">$i<br><br>";
             }
             ?>
                 <!-- <input type="radio" name="majorForPHP" value="CS"> Computer Science<br>
