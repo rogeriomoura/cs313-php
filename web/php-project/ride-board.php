@@ -16,13 +16,13 @@
     <?php include 'header.php'; ?>
     <div>
         <h1 class="centered">What are you looking for?</h1>
-        <h3 class="centered">Offer a ride || Search for a ride</h3>
+        <h3 class="centered"><strong>Offer</strong> a ride or <strong>Search</strong> for a ride</h3>
         <div class="row p-3">
             <div class="col"></div>
-            <div class="col centered border shadow buttonBox">
+            <div class="col centered border shadow buttonBox" title="Offer a Ride">
                 <img src="../images/driver.png" alt="offer ride" class="rounded img-resize-90">
             </div>
-            <div class="col centered border shadow buttonBox">
+            <div class="col centered border shadow buttonBox" title="Search for a Ride">
                 <img src="../images/rider.png" alt="search ride" class="rounded img-resize-90">
             </div>
             <div class="col"></div>
