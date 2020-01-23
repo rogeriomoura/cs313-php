@@ -83,7 +83,6 @@ session_start();
                 <p>Total: $<?php echo ($_SESSION["shortsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["shirtsTotal"]) ?>.00</p>
             </div>
         </div>
-        ?>
     </form>
         <div class="row">
             <form action="shopping-cart.php">
