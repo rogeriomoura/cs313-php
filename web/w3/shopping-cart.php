@@ -49,11 +49,13 @@ session_start();
             <div class="col p-3"><p>Pants</p></div>
             <div class="col p-3"><p name="pantsPrice">price: $15.00</p></div>
             <div class="col p-3"><button type="submit" name="buttonPants">Add to cart</button></div>
+            <div class="col p-3"><?php echo "This is SESSION[pants]" . $_SESSION["pants"] ?></div>
         </div>
         <div class="row p-3">
             <div class="col p-3"><p>Shorts</p></div>
             <div class="col p-3"><p name="shortsPrice">price: $10.00</p></div>
             <div class="col p-3"><button type="submit" name="buttonShorts">Add to cart</button></div>
+            <div class="col p-3"><?php echo "This is SESSION[shorts]" . $_SESSION["shorts"] ?></div>
         </div>
         <button action="">Check Shopping Cart</button>
     </form>
