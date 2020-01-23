@@ -1,12 +1,16 @@
 <?php
    // Start the session
+   session_start();
 ?>
 <!DOCTYPE html>
 <html>
    <body>
       <?php
          // remove previous session variable
+         session_unset();
          // Set session variables
+         $_SESSION["favcolor"] = "green";
+         $_SESSION["favanimal"] = "dolphin";
          // echo that variables have been set
 ?>
       <a href="thursdaySession2.php">Check the variables on another page</a>
