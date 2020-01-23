@@ -6,4 +6,9 @@
    $a = $_SESSION["favanimal"];
 ?>
 <h1>Your favorite animal is <?=$a?> and your favorite color is <?=$c?></h1>
-<?php ?>
+
+
+<?php if(isset($_SESSION["pictureUrl"])){ ?>
+   <h3>Again, just for kicks, from a form!</h3>
+   <img src="<?php=$_SESSION["pictureUrl"]?>" alt="A Cookie!">
+<?php } ?>
