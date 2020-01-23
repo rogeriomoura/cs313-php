@@ -49,27 +49,29 @@ session_start();
     <form method="post">
         <div class="row">
             <div class="col"><p>Shirt</p></div>
-            <div class="col"><p>Total: <?php echo $_SESSION["shirtsTotal"]; ?></p></div>
+            <div class="col"><p>Total: $<?php echo $_SESSION["shirtsTotal"]; ?>.00</p></div>
             <div class="col"><button type="submit" name="minusShirt">-</button></div>
             <div class="col"><p>Quantity: <?php echo $_SESSION["shirts"] ?></p></div>
             <div class="col"><button type="submit" name="plusShirt">+</button></div>
         </div>
         <div class="row">
             <div class="col"><p>Pants</p></div>
-            <div class="col"><p>Total: <?php echo $_SESSION["pantsTotal"]; ?></p></div>
+            <div class="col"><p>Total: $<?php echo $_SESSION["pantsTotal"]; ?>.00</p></div>
             <div class="col"><button type="submit" name="minusPants">-</button></div>
             <div class="col"><p>Quantity: <?php echo $_SESSION["pants"] ?></p></div>
             <div class="col"><button type="submit" name="plusPants">+</button></div>
         </div>
         <div class="row">
             <div class="col"><p>Shorts</p></div>
-            <div class="col"><p>Total: <?php echo $_SESSION["shortsTotal"]; ?></p></div>
+            <div class="col"><p>Total: $<?php echo $_SESSION["shortsTotal"]; ?>.00</p></div>
             <div class="col"><button type="submit" name="minusShorts">-</button></div>
             <div class="col"><p>Quantity: <?php echo $_SESSION["shorts"] ?></p></div>
             <div class="col"><button type="submit" name="plusShorts">+</button></div>
         </div>
         <div class="row">
-            <div class="col"><p>Total: <?php echo ($_SESSION["shortsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["shirtsTotal"]) ?></p></div>
+            <div class="col">
+                <p>Total: $<?php echo ($_SESSION["shortsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["shirtsTotal"]) ?>.00</p>
+            </div>
         </div>
     </form>
         <div class="row">
