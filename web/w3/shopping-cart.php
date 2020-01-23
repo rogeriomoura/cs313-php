@@ -57,7 +57,9 @@ session_start();
             <div class="col p-3"><button type="submit" name="buttonShorts">Add to cart</button></div>
             <div class="col p-3"><?php echo "This is SESSION[shorts]" . $_SESSION["shorts"] ?></div>
         </div>
-        <button action="check-out.php">Check Shopping Cart</button>
+    </form>
+    <form action="check-out.php">
+        <button type="submit">Check Shopping Cart</button>
     </form>
 </body>
 </html>
