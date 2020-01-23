@@ -29,7 +29,6 @@ session_start();
     <?php
         if(isset($_POST['buttonShirt'])) { 
             $_SESSION["shirts"] += 1;
-            // alert("HERE");
         }
         if(isset($_POST['buttonPants'])) { 
             $_SESSION["pants"] += 1;
