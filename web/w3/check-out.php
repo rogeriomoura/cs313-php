@@ -16,6 +16,12 @@ session_start();
     <title>Check Out Cart</title>
 </head>
 <body class="text-center">
+    <?php 
+        $_SESSION["shirtsTotal"] = $_SESSION["shirts"] * 7;
+        $_SESSION["pantsTotal"] = $_SESSION["pants"] * 15;
+        $_SESSION["shortsTotal"] = $_SESSION["shorts"] * 10;
+    ?>
+
     <header>
         <h1>Shopping Cart:</h1>
     </header>
@@ -43,24 +49,27 @@ session_start();
     <form method="post">
         <div class="row">
             <div class="col"><p>Shirt</p></div>
-            <div class="col"><p>Total: <?php echo $_SESSION["shirts"] * 7; ?></p></div>
+            <div class="col"><p>Total: <?php echo $_SESSION["shirtsTotal"]; ?></p></div>
             <div class="col"><button type="submit" name="minusShirt">-</button></div>
             <div class="col"><p>Quantity: <?php echo $_SESSION["shirts"] ?></p></div>
             <div class="col"><button type="submit" name="plusShirt">+</button></div>
         </div>
         <div class="row">
             <div class="col"><p>Pants</p></div>
-            <div class="col"><p>Total: <?php echo $_SESSION["pants"] * 15; ?></p></div>
+            <div class="col"><p>Total: <?php echo $_SESSION["pantsTotal"]; ?></p></div>
             <div class="col"><button type="submit" name="minusPants">-</button></div>
             <div class="col"><p>Quantity: <?php echo $_SESSION["pants"] ?></p></div>
             <div class="col"><button type="submit" name="plusPants">+</button></div>
         </div>
         <div class="row">
             <div class="col"><p>Shorts</p></div>
-            <div class="col"><p>Total: <?php echo $_SESSION["shorts"] * 10; ?></p></div>
+            <div class="col"><p>Total: <?php echo $_SESSION["shortsTotal"]; ?></p></div>
             <div class="col"><button type="submit" name="minusShorts">-</button></div>
             <div class="col"><p>Quantity: <?php echo $_SESSION["shorts"] ?></p></div>
             <div class="col"><button type="submit" name="plusShorts">+</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><p>Total: <?php echo ($_SESSION["shortsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["shirtsTotal"]) ?></p></div>
         </div>
     </form>
         <div class="row">
