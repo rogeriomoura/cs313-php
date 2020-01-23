@@ -2,8 +2,8 @@
 <html>
    <?php
       // set cookies
-      $cookie_name = "user";
-      $cookie_value = "Rio Moura";
+      $cookie_name = "users";
+      $cookie_value = "Rio Mouras";
       setcookie($cookie_name, $cookie_value, time()+(86400 * 30), "/");
    ?>
    <head>
@@ -24,7 +24,9 @@
          }
       ?>
       <h3>To print all cookies:</h3>
-      <?php // print all cookies ?>
+      <?php // print all cookies
+         
+      ?>
       <h3><a href="thursdayCookie.php">Now...to another page</a></h3>
       <h1><a href="thursdaySession1.php">Working with Sessions</a></h1>
    </body>
