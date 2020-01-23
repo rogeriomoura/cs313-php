@@ -13,7 +13,7 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="shopping-cart.css">
-    <title>Shopping Cart</title>
+    <title>Browse Items</title>
 </head>
 <body class="text-center">
 
@@ -57,7 +57,7 @@ session_start();
             <div class="col p-3"><p>Quantity: <?=$_SESSION["shorts"]?></p></div>
         </div>
     </form>
-    <form action="check-out.php">
+    <form action="view-cart.php">
         <button type="submit">Check Shopping Cart</button>
     </form>
 </body>
