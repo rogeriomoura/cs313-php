@@ -54,7 +54,7 @@ session_start();
             <div class="col p-3"><p>Shorts</p></div>
             <div class="col p-3"><p name="shortsPrice">price: $10.00</p></div>
             <div class="col p-3"><button type="submit" name="buttonShorts">Add to cart</button></div>
-            <div class="col p-3"><?=$_SESSION["shorts"]?></p></div>
+            <div class="col p-3"><p>Quantity: <?=$_SESSION["shorts"]?></p></div>
         </div>
     </form>
     <form action="check-out.php">
