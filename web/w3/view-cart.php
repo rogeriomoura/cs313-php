@@ -89,9 +89,12 @@ session_start();
             </div>
         <?php } ?>
     </form>
-        <div class="row">
-            <div class="col"><button><a href="browse-items.php">Keep Shopping</a></button></div>
-            <div class="col"><button><a href="check-out-final.php">Proceed to Check Out</a></button></div>
-        </div>
+    <div class="row">
+        <p>Total: <?=($_SESSION["shirtsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["ShortsTotal"])?></p>
+    </div>
+    <div class="row">
+        <div class="col"><button><a href="browse-items.php">Keep Shopping</a></button></div>
+        <div class="col"><button><a href="check-out-final.php">Proceed to Check Out</a></button></div>
+    </div>
 </body>
 </html>
