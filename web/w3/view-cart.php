@@ -90,7 +90,7 @@ session_start();
         <?php } ?>
     </form>
     <div class="container-fluid text-center">
-        <p>Total: $<?=($_SESSION["shirtsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["ShortsTotal"])?>.00</p>
+        <p class="text-info">Total: $<?=($_SESSION["shirtsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["shortsTotal"])?>.00</p>
     </div>
     <div class="row">
         <div class="col"><button><a href="browse-items.php">Keep Shopping</a></button></div>
