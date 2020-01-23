@@ -57,26 +57,25 @@ session_start();
             </div>
         <?php } ?>
         
-        if ($_SESSION["pants"] > 0) {
-            echo "<div class=\"row\">
-                <div class=\"col\"><p>Pants</p></div>
-                <div class=\"col\"><p>Total: $" . $_SESSION["pantsTotal"] . ".00</p></div>
-                <div class=\"col\"><button type=\"submit\" name=\"minusPants\">-</button></div>
-                <div class=\"col\"><p>Quantity: " . $_SESSION["pants"] . "</p></div>
-                <div class=\"col\"><button type=\"submit\" name=\"plusPants\">+</button></div>
-            </div>";
-        }
+        <?php if ($_SESSION["pants"] > 0) { ?>
+            <div class="row">
+                <div class="col"><p>Pants</p></div>
+                <div class="col"><p>Total: $<?=$_SESSION["pantsTotal"]?>.00</p></div>
+                <div class="col"><button type="submit" name="minusPants">-</button></div>
+                <div class="col"><p>Quantity: <?=$_SESSION["pants"]?></p></div>
+                <div class="col"><button type="submit" name="plusPants">+</button></div>
+            </div>
+        <?php } ?>
 
-        if ($_SESSION["shorts"] > 0) {
-            echo "<div class=\"row\">
-                <div class=\"col\"><p>Shorts</p></div>
-                <div class=\"col\"><p>Total: $" . $_SESSION["shortsTotal"] . ".00</p></div>
-                <div class=\"col\"><button type=\"submit\" name=\"minusShorts\">-</button></div>
-                <div class=\"col\"><p>Quantity: " . $_SESSION["shorts"] . "</p></div>
-                <div class=\"col\"><button type=\"submit\" name=\"plusShorts\">+</button></div>
-            </div>";
-        }
-        ?>
+        <?php if ($_SESSION["shorts"] > 0) { ?>
+            <div class="row">
+                <div class="col"><p>Shorts</p></div>
+                <div class="col"><p>Total: $<?=$_SESSION["shortsTotal"]?>.00</p></div>
+                <div class="col"><button type="submit" name="minusShorts">-</button></div>
+                <div class="col"><p>Quantity: <?=$_SESSION["shorts"]?></p></div>
+                <div class="col"><button type="submit" name="plusShorts">+</button></div>
+            </div>
+        <?php } ?>
     </form>
         <div class="row">
             <div class="col"><button><a href="shopping-cart.php">Keep Shopping</a></button></div>
