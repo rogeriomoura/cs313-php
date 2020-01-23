@@ -2,6 +2,9 @@
 <html>
    <?php
       // set cookies
+      $cookie_name = "user";
+      $cookie_value = "Rio Moura";
+      setcookie($cookie_name, $cookie_value, time()+(86400 * 30), "/");
    ?>
    <head>
       <title>Sessions and Cookies</title>
