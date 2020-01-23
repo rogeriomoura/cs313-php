@@ -1,6 +1,7 @@
 <?php 
    // start session
    session_start();
+   session_unset();
    // save session variables into local variables
    $c = $_SESSION["favcolor"];
    $a = $_SESSION["favanimal"];
