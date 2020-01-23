@@ -89,7 +89,7 @@ session_start();
             </div>
         <?php } ?>
     </form>
-    <div class="row">
+    <div class="container-fluid text-center">
         <p>Total: <?=($_SESSION["shirtsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["ShortsTotal"])?></p>
     </div>
     <div class="row">
