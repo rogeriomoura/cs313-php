@@ -78,19 +78,10 @@ session_start();
             </div>";
         }
         ?>
-        <div class="row">
-            <div class="col">
-                <p>Total: $<?php echo ($_SESSION["shortsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["shirtsTotal"]) ?>.00</p>
-            </div>
-        </div>
     </form>
         <div class="row">
-            <form action="shopping-cart.php">
-                <div class="col"><button type="submit">Keep Shopping</button></div>
-            </form>
-            <form action="check-out-final.php">
-                <div class="col"><button type="submit">Continue to check out</button></div>
-            </form>
+            <div class="col"><button><a href="shopping-cart.php">Keep Shopping</a></button></div>
+            <div class="col"><button><a href="check-out-final.php">Proceed to Check Out</a></button></div>
         </div>
 </body>
 </html>
