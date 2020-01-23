@@ -10,5 +10,5 @@
 
 <?php if(isset($_SESSION["pictureUrl"])){ ?>
    <h3>Again, just for kicks, from a form!</h3>
-   <img src="<?php=$_SESSION["pictureUrl"]?>" alt="A Cookie!">
+   <img src="<?=$_SESSION["pictureUrl"]?>" alt="A Cookie!";>
 <?php } ?>
