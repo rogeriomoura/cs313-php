@@ -13,16 +13,16 @@
          $_SESSION["favanimal"] = "dolphin";
          // echo that variables have been set
          if(!isset($_SESSION["favcolor"])) {
-            echo "Fav color has not been set.";
+            echo "Fav color has not been set.<br>";
          }
          else {
-            echo "Fav color has been set to " . $_SESSION["favcolor"];
+            echo "Fav color has been set to " . $_SESSION["favcolor"] . "<br>";
          }
          if(!isset($_SESSION["favanimal"])) {
-            echo "Fav animal has not been set.";
+            echo "Fav animal has not been set.<br>";
          }
          else {
-            echo "Fav color has been set to " . $_SESSION["favanimal"];
+            echo "Fav color has been set to " . $_SESSION["favanimal"] . "<br>";
          }
 ?>
       <a href="thursdaySession2.php">Check the variables on another page</a>
