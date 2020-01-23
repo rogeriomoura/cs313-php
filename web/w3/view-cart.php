@@ -29,21 +29,27 @@ session_start();
     <?php 
         if(isset($_POST['minusShirt'])) { 
             $_SESSION["shirts"] -= 1;
+            $_SESSION["shirtsTotal"] = $_SESSION["shirts"] * 7;
         }
         if(isset($_POST['plusShirt'])) { 
             $_SESSION["shirts"] += 1;
+            $_SESSION["shirtsTotal"] = $_SESSION["shirts"] * 7;
         }
 
         if(isset($_POST['minusPants'])) { 
             $_SESSION["pants"] -= 1;
+            $_SESSION["pantsTotal"] = $_SESSION["pants"] * 15;
         }if(isset($_POST['plusPants'])) { 
             $_SESSION["pants"] += 1;
+            $_SESSION["pantsTotal"] = $_SESSION["pants"] * 15;
         }
 
         if(isset($_POST['minusShorts'])) { 
             $_SESSION["shorts"] -= 1;
+            $_SESSION["shortsTotal"] = $_SESSION["shorts"] * 10;
         }if(isset($_POST['plusShorts'])) { 
             $_SESSION["shorts"] += 1;
+            $_SESSION["shortsTotal"] = $_SESSION["shorts"] * 10;
         }
     ?>
     <form method="post">
