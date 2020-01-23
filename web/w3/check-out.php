@@ -53,7 +53,7 @@ session_start();
                 <div class="col"><p>Total: $<?=$_SESSION["shirtsTotal"]?>.00</p></div>
                 <div class="col">
                     <button type="submit" name="minusShirt">-</button>
-                    <span>Quantity: <?=$_SESSION["shirts"]?></span>
+                    <span><?=$_SESSION["shirts"]?></span>
                     <button type="submit" name="plusShirt">+</button>
                 </div>
             </div>
@@ -65,7 +65,7 @@ session_start();
                 <div class="col"><p>Total: $<?=$_SESSION["pantsTotal"]?>.00</p></div>
                 <div class="col">
                     <button type="submit" name="minusPants">-</button>
-                    <span>Quantity: <?=$_SESSION["pants"]?></span>
+                    <span><?=$_SESSION["pants"]?></span>
                     <button type="submit" name="plusPants">+</button>
                 </div>
             </div>
@@ -77,7 +77,7 @@ session_start();
                 <div class="col"><p>Total: $<?=$_SESSION["shortsTotal"]?>.00</p></div>
                 <div class="col">
                     <button type="submit" name="minusShorts">-</button>
-                    <span>Quantity: <?=$_SESSION["shorts"]?></span>
+                    <span><?=$_SESSION["shorts"]?></span>
                     <button type="submit" name="plusShorts">+</button>
                 </div>
             </div>
