@@ -47,16 +47,15 @@ session_start();
         }
     ?>
     <form method="post">
-        <?php
-        if ($_SESSION["shirts"] > 0) {
-            echo "<div class=\"row\">
-                <div class=\"col\"><p>Shirt</p></div>
-                <div class=\"col\"><p>Total: $" .  $_SESSION["shirtsTotal"] . ".00</p></div>
-                <div class=\"col\"><button type=\"submit\" name=\"minusShirt\">-</button></div>
-                <div class=\"col\"><p>Quantity: " . $_SESSION["shirts"] . "</p></div>
-                <div class=\"col\"><button type=\"submit\" name=\"plusShirt\">+</button></div>
-            </div>";
-        }
+        <?php if ($_SESSION["shirts"] > 0) { ?>
+            <div class="row">
+                <div class="col"><p>Shirt</p></div>
+                <div class="col"><p>Total: $<?=$_SESSION["shirtsTotal"]?>.00</p></div>
+                <div class="col"><button type="submit" name="minusShirt">-</button></div>
+                <div class="col"><p>Quantity: <?=$_SESSION["shirts"]?></p></div>
+                <div class="col"><button type="submit" name="plusShirt">+</button></div>
+            </div>
+        <?php } ?>
         
         if ($_SESSION["pants"] > 0) {
             echo "<div class=\"row\">
