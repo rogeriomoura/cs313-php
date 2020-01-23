@@ -53,7 +53,7 @@ session_start();
                 <div class="col"><p>Total: $<?=$_SESSION["shirtsTotal"]?>.00</p></div>
                 <div class="col">
                     <button type="submit" name="minusShirt">-</button>
-                    <p>Quantity: <?=$_SESSION["shirts"]?></p>
+                    <span>Quantity: <?=$_SESSION["shirts"]?></span>
                     <button type="submit" name="plusShirt">+</button>
                 </div>
             </div>
