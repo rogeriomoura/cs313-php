@@ -55,6 +55,7 @@ session_start();
     <form method="post">
         <?php if ($_SESSION["shirts"] > 0) { ?>
             <div class="row">
+                <div class="col"></div>
                 <div class="col"><p>Shirt</p></div>
                 <div class="col"><p>Total: $<?=$_SESSION["shirtsTotal"]?>.00</p></div>
                 <div class="col">
@@ -62,11 +63,13 @@ session_start();
                     <span><?=$_SESSION["shirts"]?></span>
                     <button type="submit" name="plusShirt">+</button>
                 </div>
+                <div class="col"></div>
             </div>
         <?php } ?>
         
         <?php if ($_SESSION["pants"] > 0) { ?>
             <div class="row">
+                <div class="col"></div>
                 <div class="col"><p>Pants</p></div>
                 <div class="col"><p>Total: $<?=$_SESSION["pantsTotal"]?>.00</p></div>
                 <div class="col">
@@ -74,11 +77,13 @@ session_start();
                     <span><?=$_SESSION["pants"]?></span>
                     <button type="submit" name="plusPants">+</button>
                 </div>
+                <div class="col"></div>
             </div>
         <?php } ?>
 
         <?php if ($_SESSION["shorts"] > 0) { ?>
             <div class="row">
+                <div class="col"></div>
                 <div class="col"><p>Shorts</p></div>
                 <div class="col"><p>Total: $<?=$_SESSION["shortsTotal"]?>.00</p></div>
                 <div class="col">
@@ -86,6 +91,7 @@ session_start();
                     <span><?=$_SESSION["shorts"]?></span>
                     <button type="submit" name="plusShorts">+</button>
                 </div>
+                <div class="col"></div>
             </div>
         <?php } ?>
     </form>
