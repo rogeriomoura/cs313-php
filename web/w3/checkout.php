@@ -27,12 +27,10 @@ session_start();
     </header>
     <?php 
         if(isset($_POST['submit'])) { 
-            $_SESSION["street"] = $_POST["street"];
-            $_SESSION["city"] = $_POST["city"];
-            $_SESSION["state"] = $_POST["state"];
-            $_SESSION["zip"] = $_POST["zip"];
-
-            echo "<h3>Session variables have been set to " . $_SESSION["street"] . " " . $_SESSION["city"] . " " . $_SESSION["state"] . " " . $_SESSION["zip"] . "</h3>";
+            $_SESSION["street"] = htmlspecialchar($_POST["street"]);
+            $_SESSION["city"] = htmlspecialchar($_POST["city"]);
+            $_SESSION["state"] = htmlspecialchar($_POST["state"]);
+            $_SESSION["zip"] = htmlspecialchar($_POST["zip"]);
         }
     ?>
     <form method="post">
