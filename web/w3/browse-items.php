@@ -39,22 +39,28 @@ session_start();
     ?>
     <form method="post">
         <div class="row p-3">
-            <div class="col p-3"><p>Shirt</p></div>
-            <div class="col p-3"><p name="shirtPrice">price: $7.00</p></div>
-            <div class="col p-3"><button type="submit" name="buttonShirt">Add to cart</button></div>
-            <div class="col p-3"><p>Quantity: <?=$_SESSION["shirts"]?></p></div>
+            <div class="col"></div>
+            <div class="col"><p>Shirt</p></div>
+            <div class="col"><p name="shirtPrice">price: $7.00</p></div>
+            <div class="col"><button type="submit" name="buttonShirt">Add to cart</button></div>
+            <div class="col"><p>Quantity: <?=$_SESSION["shirts"]?></p></div>
+            <div class="col"></div>
         </div>
         <div class="row p-3">
-            <div class="col p-3"><p>Pants</p></div>
-            <div class="col p-3"><p name="pantsPrice">price: $15.00</p></div>
-            <div class="col p-3"><button type="submit" name="buttonPants">Add to cart</button></div>
-            <div class="col p-3"><p>Quantity: <?=$_SESSION["pants"]?></p></div>
+            <div class="col"></div>
+            <div class="col"><p>Pants</p></div>
+            <div class="col"><p name="pantsPrice">price: $15.00</p></div>
+            <div class="col"><button type="submit" name="buttonPants">Add to cart</button></div>
+            <div class="col"><p>Quantity: <?=$_SESSION["pants"]?></p></div>
+            <div class="col"></div>
         </div>
         <div class="row p-3">
-            <div class="col p-3"><p>Shorts</p></div>
-            <div class="col p-3"><p name="shortsPrice">price: $10.00</p></div>
-            <div class="col p-3"><button type="submit" name="buttonShorts">Add to cart</button></div>
-            <div class="col p-3"><p>Quantity: <?=$_SESSION["shorts"]?></p></div>
+            <div class="col"></div>
+            <div class="col"><p>Shorts</p></div>
+            <div class="col"><p name="shortsPrice">price: $10.00</p></div>
+            <div class="col"><button type="submit" name="buttonShorts">Add to cart</button></div>
+            <div class="col"><p>Quantity: <?=$_SESSION["shorts"]?></p></div>
+            <div class="col"></div>
         </div>
     </form>
     <form action="view-cart.php">
