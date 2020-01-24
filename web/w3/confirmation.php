@@ -31,6 +31,7 @@ session_start();
             <?php if(isset($_SESSION["shorts"]) && $_SESSION["pants"] > 0) { ?>
                 <p>Shorts: <?=$_SESSION["shorts"]?></p>
             <?php } ?>
+            <p>Total: $<?=($_SESSION["shirtsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["shortsTotal"])?>.00</p>
         </div>
         <div class="col">
             <p>Address:</p>
