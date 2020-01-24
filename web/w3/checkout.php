@@ -27,10 +27,10 @@ session_start();
     </header>
     <?php 
         if(isset($_POST['submit'])) { 
-            $_SESSION["street"] = htmlspecialchar($_POST["street"]);
-            $_SESSION["city"] = htmlspecialchar($_POST["city"]);
-            $_SESSION["state"] = htmlspecialchar($_POST["state"]);
-            $_SESSION["zip"] = htmlspecialchar($_POST["zip"]);
+            $_SESSION["street"] = htmlspecialchars($_POST["street"]);
+            $_SESSION["city"] = htmlspecialchars($_POST["city"]);
+            $_SESSION["state"] = htmlspecialchars($_POST["state"]);
+            $_SESSION["zip"] = htmlspecialchars($_POST["zip"]);
         }
     ?>
     <form method="post">
