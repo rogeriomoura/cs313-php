@@ -51,6 +51,7 @@ session_start();
             <div class="col"><label for="zip">ZIP Code: </label> <input type="text" name="zip"></div>
             <div class="col"></div>
         </div>
+        <button type="submit">Save Address</button>
     </form>
     <div class="row">
         <div class="col"><button><a href="view-cart.php">View Cart</a></button></div>
