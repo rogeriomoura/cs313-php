@@ -121,6 +121,7 @@
                             </div>
                         </div>
                     </div>
+                    </form>
                 <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
             </article>
         </section>
