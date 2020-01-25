@@ -44,16 +44,22 @@
                 <ul>
                     <?php if($_SESSION["stuff1"] > 0) { ?>
                     <li>Stuff1: <?=$_SESSION["stuff1"]?></li>
+                    <?php } ?>
                     <?php if($_SESSION["stuff2"] > 0) { ?>
                     <li>Stuff1: <?=$_SESSION["stuff2"]?></li>
+                    <?php } ?>
                     <?php if($_SESSION["stuff3"] > 0) { ?>
                     <li>Stuff1: <?=$_SESSION["stuff3"]?></li>
+                    <?php } ?>
                     <?php if($_SESSION["stuff4"] > 0) { ?>
                     <li>Stuff1: <?=$_SESSION["stuff4"]?></li>
+                    <?php } ?>
                     <?php if($_SESSION["stuff5"] > 0) { ?>
                     <li>Stuff1: <?=$_SESSION["stuff5"]?></li>
+                    <?php } ?>
                     <?php if($_SESSION["stuff6"] > 0) { ?>
                     <li>Stuff1: <?=$_SESSION["stuff6"]?></li>
+                    <?php } ?>
                 </ul>
             </nav>
             <article>
@@ -149,3 +155,4 @@
         ?>
         </footer>
     </body>
+</html>
