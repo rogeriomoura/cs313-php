@@ -1,8 +1,8 @@
 <?php 
-session_start();
+    session_start();
  ?>
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
     <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -15,13 +15,6 @@ session_start();
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='layout.css'>
     <script src=checkout.js></script>
-    <script>
-			// prevents refresh from submitting form and clears out unneeded variables
-            // Thank you Brother Birch for this section of JS!
-            if ( window.history.replaceState ) {
-                window.history.replaceState( null, null, window.location.href );
-            }
-    </script>
     </head>
     <body>
         <header>
