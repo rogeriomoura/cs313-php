@@ -28,7 +28,7 @@ session_start();
             <?php if(isset($_SESSION["pants"]) && $_SESSION["pants"] > 0) { ?>
                 <p>Pants: <?=$_SESSION["pants"]?></p>
             <?php } ?>
-            <?php if(isset($_SESSION["shorts"]) && $_SESSION["pants"] > 0) { ?>
+            <?php if(isset($_SESSION["shorts"]) && $_SESSION["shorts"] > 0) { ?>
                 <p>Shorts: <?=$_SESSION["shorts"]?></p>
             <?php } ?>
             <p>Total: $<?=($_SESSION["shirtsTotal"] + $_SESSION["pantsTotal"] + $_SESSION["shortsTotal"])?>.00</p>
