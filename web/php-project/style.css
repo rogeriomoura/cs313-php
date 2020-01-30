@@ -24,7 +24,9 @@
 	padding-bottom: 30px;
 }
 
-.buttonBox { }
+.buttonBox { 
+    
+}
 
 .buttonBox:active {
     transform: translateY(4px);
