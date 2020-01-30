@@ -48,6 +48,7 @@
                         <input class="form-control" type="text" name="price" id="price">
                     </div>
                 </div>
+                <input type="submit" value="Submit">
             </form>
         </div>
     </div>
