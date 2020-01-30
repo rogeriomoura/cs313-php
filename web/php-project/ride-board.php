@@ -19,10 +19,10 @@
         <h3 class="centered"><strong>Offer</strong> a ride or <strong>Search</strong> for a ride</h3>
         <div class="row p-3">
             <div class="col"></div>
-            <div class="col centered border shadow buttonBox" title="Offer a Ride">
+            <div class="col centered border shadow buttonBox" title="Offer a Ride" id="offerRideButton">
                 <img src="../images/driver.png" alt="offer ride" class="rounded img-resize-90">
             </div>
-            <div class="col centered border shadow buttonBox" title="Search for a Ride">
+            <div class="col centered border shadow buttonBox" title="Search for a Ride" id="searchRideButton">
                 <img src="../images/rider.png" alt="search ride" class="rounded img-resize-90">
             </div>
             <div class="col"></div>
