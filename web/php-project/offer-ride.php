@@ -48,6 +48,12 @@
                         <input class="form-control" type="text" name="price" id="price">
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="time">Time of departure:</label><br>
+                        <input class="form-control" type="text" name="time" id="time">
+                    </div>
+                </div>
                 <input type="submit" value="Submit">
             </form>
         </div>
