@@ -17,44 +17,45 @@
     <div class="p-3">
         <div class="container">
             <h1>Please fill the information bellow, all fields are required!</h1>
-            <form action="" method="post">
+            <form action="" method="post" class="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col">
                         <label for="name">Name:</label><br>
-                        <input class="form-control" type="text" name="name" id="name"><br>
+                        <input class="form-control" type="text" name="name" id="name" required><br>
                     </div>
                     <div class="col">
                         <label for="contact">Contact:</label><br>
-                        <input class="form-control" type="text" name="contact" id="contact"><br>
+                        <input class="form-control" type="text" name="contact" id="contact" required><br>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col">
                         <label for="cFrom">City from:</label><br>
-                        <input class="form-control" type="text" name="cFrom" id="cFrom"><br>
+                        <input class="form-control" type="text" name="cFrom" id="cFrom" required><br>
                     </div>
                     <div class="col">
                         <label for="cTo">City to:</label><br>
-                        <input class="form-control" type="text" name="cTo" id="cTo"><br>
+                        <input class="form-control" type="text" name="cTo" id="cTo" required><br>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col">
                         <label for="seats">Available seats:</label><br>
-                        <input class="form-control" type="text" name="seats" id="seats"><br>
+                        <input class="form-control" type="text" name="seats" id="seats" required><br>
                     </div>
                     <div class="col">
                         <label for="price">Price per person:</label><br>
-                        <input class="form-control" type="text" name="price" id="price">
+                        <input class="form-control" type="text" name="price" id="price" required><br>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col">
                         <label for="time">Time of departure:</label><br>
-                        <input class="form-control" type="text" name="time" id="time">
+                        <input class="form-control" type="text" name="time" id="time" required><br>
                     </div>
+                    <div class="col"></div>
                 </div>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="submitOffer">
             </form>
         </div>
     </div>

@@ -7,3 +7,22 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
         alert("Page under construction");
     });
 });
+
+//Validates the form for offer ride. If it's empty it stops the submit process
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Get the forms we want to add validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
