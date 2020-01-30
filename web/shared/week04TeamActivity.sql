@@ -58,7 +58,7 @@ ALTER TABLE notes
 ADD notes VARCHAR;
 
 
-SELECT note, name, speaker_name
+SELECT notes.note, talks.name, speakers.speaker_name
 FROM notes
 INNER JOIN talks ON notes.talk_id = talks.id
 INNER JOIN speakers ON talks.speaker_id = speakers.id;
