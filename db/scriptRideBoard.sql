@@ -12,7 +12,7 @@ CREATE TABLE rides
     id SERIAL NOT NULL PRIMARY KEY,
     cityFrom VARCHAR(80) NOT NULL,
     cityTo VARCHAR(80) NOT NULL,
-    seats INT(1) NOT NULL,
+    seats INT NOT NULL,
     date DATE NOT NULL,
     time TIME NOT NULL,
     price FLOAT NOT NULL,
