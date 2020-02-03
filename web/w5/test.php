@@ -27,10 +27,10 @@
 
         echo "<p>Database set up!</p><br>";
 
-    }catch(PDOExeption $e){
+    }catch(PDOException $ex){
 
         echo "<h1>This is the error:</h1><br>";
-        echo $e->getMessage();
+        echo $ex->getMessage();
         die();
 
     }
