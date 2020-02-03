@@ -1,28 +1,3 @@
-<?php 
-try{
-
-    $dbURL('DATABASE_URL');
-
-    $dbOpts = paser_url($dbURL);
-
-    $dbHost = $dbOpts["host"];
-    $dbPort = $dbOpts["port"];
-    $dbUser = $dbOpts["user"];
-    $dbPassword = $dbOpts["pass"];
-    $dbName = ltrim($dbOpts["path"],'/');
-
-    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-}catch(PDOExeption $e){
-
-    echo "<h1>This is the error:</h1><br>";
-    echo $e->getMessage();
-    die();
-
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +7,31 @@ try{
     <title>Testing query with PHP</title>
 </head>
 <body>
-<?php
+<?php 
+    try{
+
+        $dbURL('DATABASE_URL');
+
+        $dbOpts = paser_url($dbURL);
+
+        $dbHost = $dbOpts["host"];
+        $dbPort = $dbOpts["port"];
+        $dbUser = $dbOpts["user"];
+        $dbPassword = $dbOpts["pass"];
+        $dbName = ltrim($dbOpts["path"],'/');
+
+        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    }catch(PDOExeption $e){
+
+        echo "<h1>This is the error:</h1><br>";
+        echo $e->getMessage();
+        die();
+
+    }
+    
     foreach ($db->query('SELECT username, password FROM users') as $row)
     {
       echo 'user: ' . $row['username'];
