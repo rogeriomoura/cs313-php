@@ -25,6 +25,8 @@
 
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+        echo "<p>Database set up!</p><br>";
+
     }catch(PDOExeption $e){
 
         echo "<h1>This is the error:</h1><br>";
