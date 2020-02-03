@@ -7,6 +7,7 @@
     <title>Testing query with PHP</title>
 </head>
 <body>
+<h1>This is the test querying data with PHP</h1>
 <?php 
     try{
 
@@ -31,7 +32,7 @@
         die();
 
     }
-    
+
     foreach ($db->query('SELECT username, password FROM users') as $row)
     {
       echo 'user: ' . $row['username'];
