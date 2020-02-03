@@ -11,7 +11,7 @@
 <?php 
     try{
 
-        $dbURL('DATABASE_URL');
+        $dbUrl = getenv('DATABASE_URL');
 
         $dbOpts = paser_url($dbURL);
 
