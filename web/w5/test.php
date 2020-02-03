@@ -20,7 +20,15 @@ try{
     echo "<h1>This is the error:</h1><br>";
     echo $e->getMessage();
     die();
-    
+
+}
+
+
+foreach ($db->query('SELECT username, password FROM users') as $row)
+{
+  echo 'user: ' . $row['username'];
+  echo ' password: ' . $row['password'];
+  echo '<br/>';
 }
 
 
