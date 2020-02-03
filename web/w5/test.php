@@ -16,15 +16,15 @@
         $dbOpts = parse_url($dbURL);
 
         $dbHost = $dbOpts["host"];
-        echo "This is the dbHost: " . $dbHost;
+        echo "This is the dbHost: " . $dbHost . "<br>";
         $dbPort = $dbOpts["port"];
-        echo "This is the dbPort: " . $dbPort;
+        echo "This is the dbPort: " . $dbPort . "<br>";
         $dbUser = $dbOpts["user"];
-        echo "This is the dbUser: " . $dbUser;
+        echo "This is the dbUser: " . $dbUser . "<br>";
         $dbPassword = $dbOpts["pass"];
-        echo "This is the dbPassword: " . $dbPassword;
+        echo "This is the dbPassword: " . $dbPassword . "<br>";
         $dbName = ltrim($dbOpts["path"],'/');
-        echo "This is the dbName: " . $dbName;
+        echo "This is the dbName: " . $dbName . "<br>";
 
         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
