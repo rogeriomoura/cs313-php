@@ -34,8 +34,7 @@
 
     }catch(PDOException $ex){
 
-        echo "<h1>This is the error:</h1><br>";
-        echo $ex->getMessage();
+        echo 'Error!: ' . $ex->getMessage();
         die();
 
     }
