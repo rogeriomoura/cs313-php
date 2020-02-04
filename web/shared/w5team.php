@@ -20,8 +20,8 @@
 
 <?php 
     if(isset($_POST["submit"])) {
-        $bookName = $_POST["bookName"];
-        $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book = $bookName");
+        // $bookName = $_POST["bookName"];
+        $scriptures = $db->prepare('SELECT * FROM scriptures WHERE book = ' . $_POST["bookName"]);
         $scriptures->execute();
     
         while ($fRow = $scriptures->fetch(PDO::FETCH_ASSOC)) {
