@@ -19,7 +19,9 @@
 </form>
 
 <?php 
+    echo "Things are cold!";
     if(isset($_POST["submit"])) {
+        echo "Inside IF statement";
         // $bookName = $_POST["bookName"];
         $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book = " . $_POST["bookName"]);
         $scriptures->execute();
