@@ -36,3 +36,9 @@ INSERT INTO w5_family_members ( first_name
                        VALUES ( 'Hannah'
                               , 'Birch'
                               , 6);
+INSERT INTO w5_family_members (first_name
+                              , last_name
+                              , relationship_id)
+                       VALUES ( 'Kristen'
+                              , 'Moura'
+                              , (SELECT id FROM w5_relationships WHERE description = 'Wife'));
