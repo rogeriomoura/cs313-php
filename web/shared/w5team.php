@@ -23,28 +23,20 @@
     if(isset($_POST["submit"])) {
         echo "Inside IF statement";
         $bookName = $_POST["bookName"];
-        // $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book = " . $_POST["bookName"]);
-        // $scriptures->execute();
+        $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book = 'D&C'");
+        $scriptures->execute();
 
-        // echo "So far so Good!";
+        echo "So far so Good!";
     
-        // while ($fRow = $scriptures->fetch(PDO::FETCH_ASSOC)) {
-        //     $book = $fRow["book"];
-        //     $chapter = $fRow["chapter"];
-        //     $verse = $fRow["verse"];
-        //     $content = $fRow["content"];
+        while ($fRow = $scriptures->fetch(PDO::FETCH_ASSOC)) {
+            $book = $fRow["book"];
+            $chapter = $fRow["chapter"];
+            $verse = $fRow["verse"];
+            $content = $fRow["content"];
             
-        //     echo "<p>In <b>$book $chapter:$verse</b> it is written that, '$content'</p>";
-        // }
-
-        foreach ($db->query('SELECT * FROM scriptures WHERE book = ' . $bookName ) as $row)
-        {
-            echo 'book: ' . $row['book'];
-            echo 'verse : ' . $row['verse'];
-            echo '<br/>';
+            echo "<p>In <b>$book $chapter:$verse</b> it is written that, '$content'</p>";
         }
     }
-
 ?>
 </body>
 </html>
