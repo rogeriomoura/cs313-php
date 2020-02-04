@@ -19,17 +19,12 @@
 </form>
 
 <?php 
-    echo "Things are cold!";
     if(isset($_POST["submit"])) {
-        echo "Inside IF statement";
         $bookName = $_POST["bookName"];
-        echo $bookName;
         $query = "SELECT * FROM scriptures WHERE book = '$bookName'";
         $scriptures = $db->prepare($query);
         $scriptures->execute();
 
-        echo "So far so Good!";
-    
         while ($fRow = $scriptures->fetch(PDO::FETCH_ASSOC)) {
             $book = $fRow["book"];
             $chapter = $fRow["chapter"];
