@@ -23,7 +23,7 @@
         $content = $fRow["content"];
         
         
-        echo "<p>In <b>$book $chapter:$verse</b> it is written that, \'$content\'</p>";
+        echo "<p>In <b>$book $chapter:$verse</b> it is written that, '$content'</p>";
     }
 ?>
 </body>
