@@ -23,6 +23,8 @@
         // $bookName = $_POST["bookName"];
         $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book = " . $_POST["bookName"]);
         $scriptures->execute();
+
+        echo "So far so Good!";
     
         while ($fRow = $scriptures->fetch(PDO::FETCH_ASSOC)) {
             $book = $fRow["book"];
