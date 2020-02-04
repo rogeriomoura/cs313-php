@@ -26,8 +26,8 @@
 
     foreach ($db->query('SELECT * FROM w5_family_members') as $row)
     {
-      echo 'user: ' . $row['username'];
-      echo ' password: ' . $row['password'];
+      echo 'first name: ' . $row['first_name'];
+      echo ' last name: ' . $row['last_name'];
       echo '<br/>';
     }
 ?>
