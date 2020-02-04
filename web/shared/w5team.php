@@ -14,7 +14,7 @@
 <h1>Scripture Resources</h1>
 
 <form method="post">
-    <input type="text" name="bookName">
+    <input type="text" name="bookName" id="bookName">
     <input type="submit" value="Submit">
 </form>
 
