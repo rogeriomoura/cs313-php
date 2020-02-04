@@ -39,7 +39,7 @@
 
     // }
 
-    require "../dbConnect.php";
+    require "../w5/dbConnect.php";
     $db = get_db();
 
     foreach ($db->query('SELECT username, password FROM users') as $row)
