@@ -15,7 +15,7 @@
 
 <form method="post">
     <input type="text" name="bookName" id="bookName">
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" name="submit">
 </form>
 
 <?php 
@@ -29,7 +29,6 @@
             $chapter = $fRow["chapter"];
             $verse = $fRow["verse"];
             $content = $fRow["content"];
-            
             
             echo "<p>In <b>$book $chapter:$verse</b> it is written that, '$content'</p>";
         }
