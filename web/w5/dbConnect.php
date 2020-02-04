@@ -15,7 +15,7 @@ function get_db() {
       $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
       $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-      echo "<h3>database connected sucessfully.</h3>";
+      printf("<h3>database connected sucessfully.</h3>");
     }
     catch (PDOException $ex)
     {
