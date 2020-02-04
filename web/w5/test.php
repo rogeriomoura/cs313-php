@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Testing query with PHP</title>
     <?php
-        require "../w5/dbConnect.php";
+        require "../web/dbConnect.php";
         $db = get_db();
     ?>
 </head>
