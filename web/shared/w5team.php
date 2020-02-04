@@ -24,7 +24,7 @@
         echo "Inside IF statement";
         $bookName = $_POST["bookName"];
         echo $bookName;
-        $query = "SELECT * FROM scriptures WHERE book = $bookName";
+        $query = "SELECT * FROM scriptures WHERE book = '$bookName'";
         $scriptures = $db->prepare($query);
         $scriptures->execute();
 
