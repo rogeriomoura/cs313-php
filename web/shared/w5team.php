@@ -23,7 +23,8 @@
     if(isset($_POST["submit"])) {
         echo "Inside IF statement";
         $bookName = $_POST["bookName"];
-        $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book = 'D&C'");
+        $query = "SELECT * FROM scriptures WHERE book = $bookName";
+        $scriptures = $db->prepare($query);
         $scriptures->execute();
 
         echo "So far so Good!";
