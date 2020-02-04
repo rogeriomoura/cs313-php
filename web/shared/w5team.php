@@ -19,7 +19,7 @@
 </form>
 
 <?php 
-    if(isset($_POST['submit'])) {
+    if(isset($_POST["submit"])) {
         $bookName = $_POST["bookName"];
         $scriptures = $db->prepare("SELECT * FROM scriptures WHERE book = $bookName");
         $scriptures->execute();
