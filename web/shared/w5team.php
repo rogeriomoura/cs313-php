@@ -31,7 +31,7 @@
             $verse = $fRow["verse"];
             // $content = $fRow["content"];
             $id = $fRow["id"];
-            
+            echo "book is $book";
             echo "<p>In <b>$book $chapter:$verse</b> for details click here: <a href=\"/shared/w5details.php?id=$id&b=$book&c=$chapter&v=$verse\">Details</a></p>";
         }
     }
