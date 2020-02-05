@@ -32,7 +32,7 @@
             // $content = $fRow["content"];
             $id = $fRow["id"];
             
-            echo "<p>In <b>$book $chapter:$verse</b> for details click here: </p><a href=\"/shared/w5details.php?id=$id\">Details</a>";
+            echo "<p>In <b>$book $chapter:$verse</b> for details click here: <a href=\"/shared/w5details.php?id=$id\">Details</a></p>";
         }
     }
 ?>
