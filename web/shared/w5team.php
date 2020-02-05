@@ -20,7 +20,7 @@
 
 <?php 
     if(isset($_POST["submit"])) {
-        $bookName = $_POST["bookName"];
+        $bookName = htmlspecialchars($_POST["bookName"]);
         $query = "SELECT * FROM scriptures WHERE book = '$bookName'";
         $scriptures = $db->prepare($query);
         $scriptures->execute();
