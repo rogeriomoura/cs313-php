@@ -29,9 +29,10 @@
             $book = $fRow["book"];
             $chapter = $fRow["chapter"];
             $verse = $fRow["verse"];
-            $content = $fRow["content"];
+            // $content = $fRow["content"];
+            $id = $fRow["id"];
             
-            echo "<p>In <b>$book $chapter:$verse</b> it is written that, '$content'</p>";
+            echo "<p>In <b>$book $chapter:$verse</b> for details click here: <a href:'w5details.php?id=$id'>Details</a></p>";
         }
     }
 ?>
