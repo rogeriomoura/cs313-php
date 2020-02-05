@@ -2,6 +2,9 @@
     require "./../dbConnect.php";
     $db = get_db();
     $id = $_GET["id"];
+    $book = $_GET["b"];
+    $chapter = $_GET["c"];
+    $verse = $_GET["v"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +23,7 @@
         while ($fRow = $details->fetch(PDO::FETCH_ASSOC)) {
             $content = $fRow["content"];
 
-            echo "<p>The scripture says: $content</p>";
+            echo "<p>$book $chapter:$verse says: $content</p>";
         }
     ?>
 </body>
