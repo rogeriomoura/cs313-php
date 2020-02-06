@@ -1,33 +1,27 @@
 -- ----------------------------------------------- --
 -- --------- POPULATE THE USERS TABLE --------- --
 -- ----------------------------------------------- --
-INSERT INTO users ( username
+INSERT INTO user_driver ( username
                   , password
-                  , contact
-                  , display_name)
-           VALUES ( 'testing1'
+                  , contact)
+           VALUES ( 'driver1'
                   , 'pass1'
-                  , '111-111-1111'
-                  , 'user1');
-INSERT INTO users ( username
+                  , '111-111-1111');
+INSERT INTO user_driver ( username
                   , password
-                  , contact
-                  , display_name)
-           VALUES ( 'testing2'
+                  , contact)
+           VALUES ( 'driver2'
                   , 'pass2'
-                  , '222-222-2222'
-                  , 'user2');
-INSERT INTO users ( username
+                  , '222-222-2222');
+INSERT INTO user_driver ( username
                   , password
-                  , contact
-                  , display_name)
-           VALUES ( 'testing3'
+                  , contact)
+           VALUES ( 'driver3'
                   , 'pass3'
-                  , '333-333-3333'
-                  , 'user3');
+                  , '333-333-3333');
 
 -- ----------------------------------------------- --
--- --------- POPULATE THE RIDES TABLE --------- --
+-- ---------- POPULATE THE RIDES TABLE ----------- --
 -- ----------------------------------------------- --
 INSERT INTO rides ( cityFrom
                   , cityTo
@@ -35,7 +29,7 @@ INSERT INTO rides ( cityFrom
                   , date
                   , time
                   , price
-                  , users_id)
+                  , driver_id)
            VALUES ( 'Rexburg'
                   , 'Salt Lake'
                   , '1'
@@ -49,7 +43,7 @@ INSERT INTO rides ( cityFrom
                   , date
                   , time
                   , price
-                  , users_id)
+                  , driver_id)
            VALUES ( 'Salt Lake'
                   , 'Provo'
                   , '2'
@@ -63,7 +57,7 @@ INSERT INTO rides ( cityFrom
                   , date
                   , time
                   , price
-                  , users_id)
+                  , driver_id)
            VALUES ( 'Rexburg'
                   , 'Provo'
                   , '3'
@@ -73,17 +67,23 @@ INSERT INTO rides ( cityFrom
                   , 3);
 
 -- ----------------------------------------------- --
--- --------- POPULATE THE CONNECT TABLE --------- --
+-- ------- POPULATE THE USER_RIDER TABLE --------- --
 -- ----------------------------------------------- --
-INSERT INTO connect ( user1_id
-                  , ride_id)
-           VALUES ( 3
-                  , 1);
-INSERT INTO connect ( user1_id
-                  , ride_id)
-           VALUES ( 1
-                  , 2);
-INSERT INTO connect ( user1_id
-                  , ride_id)
-           VALUES ( 2
-                  , 3);
+INSERT INTO user_rider ( username
+                  , password
+                  , contact)
+           VALUES ( 'rider1'
+                  , 'pass1'
+                  , '111-111-1111');
+INSERT INTO user_rider ( username
+                  , password
+                  , contact)
+           VALUES ( 'rider2'
+                  , 'pass2'
+                  , '222-222-2222');
+INSERT INTO user_rider ( username
+                  , password
+                  , contact)
+           VALUES ( 'rider3'
+                  , 'pass3'
+                  , '333-333-3333');

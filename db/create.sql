@@ -1,10 +1,17 @@
-CREATE TABLE users
+CREATE TABLE user_driver
 (
     id SERIAL NOT NULL PRIMARY KEY,
     username VARCHAR(80) NOT NULL,
     password VARCHAR(80) NOT NULL,
-    contact VARCHAR(80) NOT NULL,
-    display_name VARCHAR(80) NOT NULL
+    contact VARCHAR(80) NOT NULL
+);
+
+CREATE TABLE user_rider
+(
+    id SERIAL NOT NULL PRIMARY KEY,
+    username VARCHAR(80) NOT NULL,
+    password VARCHAR(80) NOT NULL,
+    contact VARCHAR(80) NOT NULL
 );
 
 CREATE TABLE rides
@@ -16,12 +23,6 @@ CREATE TABLE rides
     date DATE NOT NULL,
     time TIME NOT NULL,
     price FLOAT NOT NULL,
-    users_id INT NOT NULL REFERENCES users(id) 
-);
-
-CREATE TABLE connect
-(
-    id SERIAL NOT NULL PRIMARY KEY,
-    user1_id INT NOT NULL REFERENCES users(id),
-    ride_id INT NOT NULL REFERENCES rides(id)
+    driver_id INT NOT NULL REFERENCES user_driver(id),
+    rider_id INT REFERENCES user_rider(id)
 );
