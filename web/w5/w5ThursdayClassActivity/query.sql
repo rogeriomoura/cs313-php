@@ -58,11 +58,9 @@ GROUP BY p.name
 ORDER BY COUNT(ep.participant_id);
 
 \echo '5f. - people that didn''t compete in any'
-SELECT name
-FROM w5_participant
-WHERE id NOT IN(SELECT participant_id FROM w5_event_participant);
+SELECT name FROM w5_participant WHERE id NOT IN(SELECT participant_id FROM w5_event_participant);
 
--- \echo '6a. Is there anyone who has competed in the same competition twice? '
+\echo '6a. Is there anyone who has competed in the same competition twice? '
 SELECT p.name, COUNT(ep.id)
 FROM w5_participant p
 INNER JOIN w5_event_participant ep ON p.id = ep.participant_id
