@@ -34,7 +34,7 @@
                     </div>
                     <div class="col">
                         <label for="cityTo">City To:</label><br>
-                        <input class="form-control" type="text" name="cityTo" id="cityTo" required placeholder="Salt Lake"><br>
+                        <input class="form-control" type="text" name="cityTo" id="cityTo" required placeholder="Provo"><br>
                     </div>
                 </div>
                 <!-- <div class="form-row">
