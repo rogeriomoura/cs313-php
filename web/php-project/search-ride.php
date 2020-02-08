@@ -16,7 +16,8 @@
     <?php include "header.php"; ?>
     <div class="p-3">
         <div class="container">
-            <h1>Please fill the information bellow, all fields are required!</h1>
+            <h1>Searching a Ride</h1>
+            <h2>Please fill the information bellow, all fields are required!</h2>
             <form action="" method="post" class="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col">
