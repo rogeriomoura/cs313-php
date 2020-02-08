@@ -73,7 +73,7 @@
                         echo "<td>City From</td>";
                         echo "<td>City To</td>";
                         echo "<td>Seats</td>";
-                        echo "<td>Date</td>";
+                        echo "<td>Date (yyyy-mm-dd)</td>";
                         echo "<td>Time</td>";
                         echo "<td>Price</td>";
                     echo "</tr>";

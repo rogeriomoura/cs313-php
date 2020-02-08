@@ -32,7 +32,7 @@ INSERT INTO rides ( cityFrom
                   , driver_id)
            VALUES ( 'Rexburg'
                   , 'Salt Lake'
-                  , '1'
+                  , 1
                   , '2020-01-23'
                   , '19:00'
                   , 20
@@ -46,7 +46,7 @@ INSERT INTO rides ( cityFrom
                   , driver_id)
            VALUES ( 'Salt Lake'
                   , 'Provo'
-                  , '2'
+                  , 2
                   , '2020-02-23'
                   , '20:00'
                   , 10
@@ -60,7 +60,7 @@ INSERT INTO rides ( cityFrom
                   , driver_id)
            VALUES ( 'Rexburg'
                   , 'Provo'
-                  , '3'
+                  , 3
                   , '2020-03-23'
                   , '03:00'
                   , 30
