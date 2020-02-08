@@ -69,15 +69,24 @@
                     $rides->execute();
                     
                     echo "<table class='table'>"; 
+                    echo "<tr>";
+                        echo "<td>ID</td>";
+                        echo "<td>City From</td>";
+                        echo "<td>City To</td>";
+                        echo "<td>Seats</td>";
+                        echo "<td>Date</td>";
+                        echo "<td>Time</td>";
+                        echo "<td>Price</td>";
+                    echo "</tr>";
                     while ($row = $rides->fetch(PDO::FETCH_ASSOC)){
                             echo "<tr>";
-                                echo "<td>ID: " . $row["id"] . "</td>";
-                                echo "<td>City From: " . $row["cityfrom"] . "</td>";
-                                echo "<td>City To: " . $row["cityto"] . "</td>";
-                                echo "<td>Seats: " . $row["seats"] . "</td>";
-                                echo "<td>Date: " . $row["date"] . "</td>";
-                                echo "<td>Time: " . $row["time"] . "</td>";
-                                echo "<td>Price: " . $row["price"] . "</td>";
+                                echo "<td>" . $row["id"] . "</td>";
+                                echo "<td>" . $row["cityfrom"] . "</td>";
+                                echo "<td>" . $row["cityto"] . "</td>";
+                                echo "<td>" . $row["seats"] . "</td>";
+                                echo "<td>" . $row["date"] . "</td>";
+                                echo "<td>" . $row["time"] . "</td>";
+                                echo "<td>" . $row["price"] . "</td>";
                             echo "</tr>";
                     }
                     echo "</table>";
