@@ -3,7 +3,7 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
         window.location.href = "../php-project/offer-ride.php";
     });
 
-    $("#searchRideButton").click(function(){
+    $("#searchRideButton").click(function() {
       window.location.href = "../php-project/search-ride.php";
     });
 
