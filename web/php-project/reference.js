@@ -4,7 +4,7 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
     });
 
     $("#searchRideButton").click(function(){
-        alert("Page under construction");
+      window.location.href = "../php-project/search-ride.php";
     });
 });
 
