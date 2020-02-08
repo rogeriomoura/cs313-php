@@ -6,6 +6,10 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
     $("#searchRideButton").click(function(){
       window.location.href = "../php-project/search-ride.php";
     });
+
+    $("#backBtnSearch").click(function(){
+      window.location.href = "./ride-board.php";
+    });
 });
 
 //Validates the form for offer ride. If it's empty it stops the submit process
