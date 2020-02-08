@@ -1,6 +1,10 @@
 <?php
+    session_start();
     require "../dbConnect.php";
     $db = get_db();
+
+    $_SESSION["cityTo"];
+    $_SESSION["cityFrom"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +63,9 @@
                 if (isset($_POST["submitSearch"])) {
                     $cTo = $_POST["cityTo"];
                     $cFrom = $_POST["cityTo"];
-                    $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='$cTo' AND cityFrom='$cFrom'");
+                    $_SESSION["cityTo"] = $cTo;
+                    $_SESSION["cityFrom"] = $cFrom;
+                    $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='" . $_SESSION["cityTo"] . "' AND cityFrom='" . $_SESSION["cityFrom"] . "'");
                     $rides->execute();
                     
                     echo "<table>"; 
