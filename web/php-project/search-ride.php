@@ -28,7 +28,7 @@
                         <input class="form-control" type="text" name="cityTo" id="cityTo" required placeholder="Salt Lake City"><br>
                     </div>
                 </div>
-                <input type="submit" value="Search">
+                <input type="submit" value="Search" class="btn btn-primary" id="submitSearch">
             </form>
         </div>
     </div>
