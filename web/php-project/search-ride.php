@@ -68,7 +68,7 @@
                     $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='$cTo' AND cityFrom='$cFrom'");
                     $rides->execute();
                     
-                    echo "<table>"; 
+                    echo "<table class='table'>"; 
                     while ($row = $rides->fetch(PDO::FETCH_ASSOC)){
                             echo "<tr>";
                                 echo "<td>ID: " . $row["id"] . "</td>";
