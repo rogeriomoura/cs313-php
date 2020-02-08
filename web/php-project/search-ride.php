@@ -57,7 +57,7 @@
                         </select>
                     </div>
                 </div> -->
-                <input type="submit" value="Search" class="btn btn-primary" name="submitSearch" id="submitSearch"><br>
+                <input type="submit" value="Search" class="btn btn-primary" name="submitSearch" id="submitSearch"><br><br>
             </form>
             <?php
                 if (isset($_POST["submitSearch"])) {
