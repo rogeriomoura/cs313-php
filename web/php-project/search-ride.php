@@ -70,7 +70,6 @@
                     
                     echo "<table class='table'>"; 
                     echo "<tr>";
-                        echo "<td>ID</td>";
                         echo "<td>City From</td>";
                         echo "<td>City To</td>";
                         echo "<td>Seats</td>";
@@ -80,7 +79,6 @@
                     echo "</tr>";
                     while ($row = $rides->fetch(PDO::FETCH_ASSOC)){
                             echo "<tr>";
-                                echo "<td>" . $row["id"] . "</td>";
                                 echo "<td>" . $row["cityfrom"] . "</td>";
                                 echo "<td>" . $row["cityto"] . "</td>";
                                 echo "<td>" . $row["seats"] . "</td>";
