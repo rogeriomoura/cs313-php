@@ -14,6 +14,7 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
 });
 
 function backHomeBtn() {
+  alert("Back Home Button clicked!");
   document.location.href = "../php-project/ride-board.php";
 }
 
