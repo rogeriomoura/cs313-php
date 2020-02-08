@@ -60,22 +60,23 @@
                     $cTo = $_POST["cityTo"];
                     $cFrom = $_POST["cityTo"];
                     $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='$cTo' AND cityFrom='$cFrom'");
-                    $rides->execute();?>
-                    <table>
-                    <?php 
-                    while ($row = $rides->fetch(PDO::FETCH_ASSOC)){ ?>
-                            <tr>
-                                <td>id: <?=$row["id"]?></td>
-                                <td>City From: <?=$row["cityFrom"]?></td>
-                                <td>City To: <?=$row["cityTo"]?></td>
-                                <td>Seats: <?=$row["seats"]?></td>
-                                <td>Date: <?=$row["date"]?></td>
-                                <td>Time: <?=$row["time"]?></td>
-                                <td>Price: <?=$row["price"]?></td>
-                            </tr>
-              <?php } ?>
-                    </table>
-          <?php } ?>
+                    $rides->execute();
+                    
+                    echo "<table>"; 
+                    while ($row = $rides->fetch(PDO::FETCH_ASSOC)){
+                            echo "<tr>";
+                                echo "<td>ID: " . $row["id"] . "</td>";
+                                echo "<td>City From: " . $row["cityFrom"] . "</td>";
+                                echo "<td>City To: " . $row["cityTo"] . "</td>";
+                                echo "<td>Seats: " . $row["seats"] . "</td>";
+                                echo "<td>Date: " . $row["date"] . "</td>";
+                                echo "<td>Time: " . $row["time"] . "</td>";
+                                echo "<td>Price: " . $row["price"] . "</td>";
+                            echo "</tr>";
+                    }
+                    echo "</table>";
+                }
+            ?>
         </div>
     </div>
     <?php include "footer.php"; ?>
