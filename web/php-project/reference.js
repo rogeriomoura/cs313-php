@@ -7,16 +7,16 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
       window.location.href = "../php-project/search-ride.php";
     });
 
-    $("#backHomeBtn").click(function(){
-      window.location.href = "../php-project/ride-board.php";
-      alert("Back button clicked.");
-    });
-});
+    // $("#backHomeBtn").click(function(){
+    //   window.location.href = "../php-project/ride-board.php";
+    //   alert("Back button clicked.");
+    // });
 
-function backHomeBtn() {
-  alert("Back Home Button clicked!");
-  document.location.href = "../php-project/ride-board.php";
-}
+    function backHomeBtn() {
+      alert("Back Home Button clicked!");
+      document.location.href = "../php-project/ride-board.php";
+    }
+});
 
 //Validates the form for offer ride. If it's empty it stops the submit process
 (function() {
