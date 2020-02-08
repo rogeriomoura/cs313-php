@@ -8,7 +8,6 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
     });
 
     $("#backButton").click(function() {
-      alert("Back button clicked.");
       window.location.href = "../php-project/ride-board.php";
     });
 });
