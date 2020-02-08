@@ -90,8 +90,7 @@
                     echo "</table>";
                 }
             ?>
-            <input type="button" value="Back" class="btn btn-primary" id="backButton">
-            <a href='#' data-role='button' class="btn btn-primary" id="backButton">start</a>
+            <!-- <input type="button" value="Back" class="btn btn-primary" id="backButton"> -->
         </div>
     </div>
     <?php include "footer.php"; ?>
