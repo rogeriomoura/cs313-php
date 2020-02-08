@@ -33,7 +33,7 @@
                         <input class="form-control" type="text" name="cityTo" id="cityTo" required placeholder="Salt Lake City"><br>
                     </div>
                 </div>
-                <div class="form-row">
+                <!-- <div class="form-row">
                     <div class="col">
                         <label for="date">Date:</label><br>
                         <input class="form-control" type="date" name="date" id="date" required min="<?=date('Y-m-d')?>"><br>
@@ -52,12 +52,30 @@
                             <option value="tbd">TBD</option>
                         </select>
                     </div>
-                </div>
-                <input type="submit" value="Search" class="btn btn-primary" id="submitSearch">
+                </div> -->
+                <input type="submit" value="Search" class="btn btn-primary" name="submitSearch" id="submitSearch">
             </form>
             <?php
-                
-            ?>
+                if (isset($_POST["submitSearch"])) {
+                    $cTo = $_POST["cityTo"];
+                    $cFrom = $_POST["cityTo"];
+                    $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='$cTo' AND cityFrom='$cFrom'");
+                    $rides->execute();?>
+                    <table>
+                    <?php 
+                    while ($row = $rides->fetch(PDO::FETCH_ASSOC)){ ?>
+                            <tr>
+                                <td>id: <?=$row["id"]?></td>
+                                <td>City From: <?=$row["cityFrom"]?></td>
+                                <td>City To: <?=$row["cityTo"]?></td>
+                                <td>Seats: <?=$row["seats"]?></td>
+                                <td>Date: <?=$row["date"]?></td>
+                                <td>Time: <?=$row["time"]?></td>
+                                <td>Price: <?=$row["price"]?></td>
+                            </tr>
+              <?php } ?>
+                    </table>
+          <?php } ?>
         </div>
     </div>
     <?php include "footer.php"; ?>
