@@ -9,6 +9,7 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
 
     $("#backHomeBtn").click(function(){
       window.location.href = "../php-project/ride-board.php";
+      alert("Back button clicked.");
     });
 });
 

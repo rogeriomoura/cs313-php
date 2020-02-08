@@ -76,7 +76,7 @@
                         </select>
                     </div>
                 </div>
-                <input type="submit" value="Submit" class="btn btn-primary" id="submitOffer">
+                <input type="submit" value="Submit" class="btn btn-primary" id="submitOffer"><br><br>
             </form>
             <input type="button" value="Back" class="btn btn-primary" id="backHomeBtn">
         </div>
