@@ -65,7 +65,7 @@
                     $_SESSION["cityFrom"] = $_POST["cityFrom"];
                     $cTo = $_SESSION["cityTo"];
                     $cFrom = $_SESSION["cityFrom"];
-                    $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='$cTo' AND cityFrom='$cFrom'");
+                    $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='$cTo' AND cityFrom='$cFrom' ORDER BY date");
                     $rides->execute();
                     
                     echo "<table class='table'>"; 
