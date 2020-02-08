@@ -74,8 +74,8 @@
                     while ($row = $rides->fetch(PDO::FETCH_ASSOC)){
                             echo "<tr>";
                                 echo "<td>ID: " . $row["id"] . "</td>";
-                                echo "<td>City From: " . $row["cityFrom"] . "</td>";
-                                echo "<td>City To: " . $row["cityTo"] . "</td>";
+                                echo "<td>City From: " . $row["cityfrom"] . "</td>";
+                                echo "<td>City To: " . $row["cityto"] . "</td>";
                                 echo "<td>Seats: " . $row["seats"] . "</td>";
                                 echo "<td>Date: " . $row["date"] . "</td>";
                                 echo "<td>Time: " . $row["time"] . "</td>";
