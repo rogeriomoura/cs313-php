@@ -58,7 +58,7 @@
                 <div class="form-row">
                     <div class="col">
                         <label for="date">Date:</label><br>
-                        <input class="form-control" type="date" min="<?=date('Y-m-d')?>"name="date" id="date" required><br>
+                        <input class="form-control" type="date" min="<?=date('Y-m-d')?>" name="date" id="date" required><br>
                     </div>
                     <div class="col">
                         <label for="time">Time of departure:</label><br>
