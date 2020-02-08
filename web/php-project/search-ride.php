@@ -91,7 +91,7 @@
                 }
             ?>
             <input type="button" value="Back" class="btn btn-primary" id="backHomeBtn">
-            <button class="btn btn-primary" id="backHomeBtn" onclick="backHomeBtn">Back</button>
+            <button class="btn btn-primary" id="backHomeBtn" onclick="backHomeBtn()">Back</button>
         </div>
     </div>
     <?php include "footer.php"; ?>
