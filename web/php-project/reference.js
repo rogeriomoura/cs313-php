@@ -14,7 +14,7 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
 });
 
 function backHomeBtn() {
-  window.location.href = "../php-project/ride-board.php";
+  document.location.href = "../php-project/ride-board.php";
 }
 
 //Validates the form for offer ride. If it's empty it stops the submit process
