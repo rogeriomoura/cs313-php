@@ -61,11 +61,11 @@
             </form>
             <?php
                 if (isset($_POST["submitSearch"])) {
-                    $cTo = $_POST["cityTo"];
-                    $cFrom = $_POST["cityTo"];
-                    $_SESSION["cityTo"] = $cTo;
-                    $_SESSION["cityFrom"] = $cFrom;
-                    $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='" . $_SESSION["cityTo"] . "' AND cityFrom='" . $_SESSION["cityFrom"] . "'");
+                    $_SESSION["cityTo"] = $_POST["cityTo"];
+                    $_SESSION["cityFrom"] = $_POST["cityTo"];
+                    $cTo = $_SESSION["cityTo"];
+                    $cFrom = $_SESSION["cityFrom"];
+                    $rides = $db->prepare("SELECT * FROM rides WHERE cityTo='$cTo' AND cityFrom='$cFrom'");
                     $rides->execute();
                     
                     echo "<table>"; 
