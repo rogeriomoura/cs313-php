@@ -78,6 +78,7 @@
                 </div>
                 <input type="submit" value="Submit" class="btn btn-primary" id="submitOffer">
             </form>
+            <input type="button" value="Back" class="btn btn-primary" id="backHomeBtn">
         </div>
     </div>
     <?php include "footer.php"; ?>

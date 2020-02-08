@@ -7,7 +7,7 @@ $(document).ready(function() { //or you can use $(function(){ jQuery goes here }
       window.location.href = "../php-project/search-ride.php";
     });
 
-    $("#backBtnSearch").click(function(){
+    $("#backHomeBtn").click(function(){
       window.location.href = "./ride-board.php";
     });
 });
