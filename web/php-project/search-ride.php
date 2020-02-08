@@ -62,7 +62,7 @@
             <?php
                 if (isset($_POST["submitSearch"])) {
                     $_SESSION["cityTo"] = $_POST["cityTo"];
-                    $_SESSION["cityFrom"] = $_POST["cityTo"];
+                    $_SESSION["cityFrom"] = $_POST["cityFrom"];
                     $cTo = $_SESSION["cityTo"];
                     $cFrom = $_SESSION["cityFrom"];
                     echo "cTo: $cTo<br>";
