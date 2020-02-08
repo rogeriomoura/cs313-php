@@ -91,7 +91,7 @@
                 }
             ?>
             <input type="button" value="Back" class="btn btn-primary" id="backButton">
-            <a href='#' data-role='button'>start</a>
+            <a href='#' data-role='button' class="btn btn-primary">start</a>
         </div>
     </div>
     <?php include "footer.php"; ?>
