@@ -1,3 +1,7 @@
+<?php
+    require "../dbConnect.php";
+    $db = get_db();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,6 +55,9 @@
                 </div>
                 <input type="submit" value="Search" class="btn btn-primary" id="submitSearch">
             </form>
+            <?php
+                
+            ?>
         </div>
     </div>
     <?php include "footer.php"; ?>
