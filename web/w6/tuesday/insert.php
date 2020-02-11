@@ -3,6 +3,9 @@
 $first = $_POST["first"];
 $last = $_POST["last"];
 $food = $_POST["food"];
+echo $first;
+echo $last;
+echo $food;
 
 require("dbConnect.php");
 $db = get_db();
