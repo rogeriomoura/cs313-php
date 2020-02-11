@@ -17,8 +17,11 @@
                $id = $row["id"];
                $first = $row["first"];
                $last = $row["last"];
-               $food_id = $row["food"];
+               $food_id = $row["food_type"];
                var_dump($food_id);
+               var_dump($last);
+               var_dump($first);
+               var_dump($id);
 
                $fStatement = $db->prepare("SELECT * FROM w6_food WHERE id = $food_id");
                $fStatement->execute();
