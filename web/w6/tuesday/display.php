@@ -15,12 +15,11 @@
                $last = $row["last"];
                $food_id = $row["food"];
 
-               $statement = $db->prepare('SELECT * FROM w6_food WHERE id = $food_id');
-               $statement->execute();
+               $fStatement = $db->prepare('SELECT * FROM w6_food WHERE id = $food_id');
+               $fStatement->execute();
                while ($fRow = $statement->fetch(PDO::FETCH_ASSOC)){
                   $food = $fRow['food'];
                }
-
                echo "<h1>$first $last's favorite food is $food</h1>";
             }
             // retrieve url parameter
