@@ -9,6 +9,7 @@
             echo $personId;
             $statement = $db->prepare('SELECT * FROM w6_user WHERE id = :personId');
             // echo "This is the statement: " . $statement;
+            var_dump($statement);
             $statement->bindValue(':personId', $personId);
             $statement->execute();
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
