@@ -6,28 +6,19 @@
 		<div class="container">
          <?php
             $personId = $_GET["personId"];
-            echo $personId;
             $statement = $db->prepare('SELECT * FROM w6_user WHERE id = :personId');
-            var_dump($statement);
             $statement->bindValue(':personId', $personId, PDO::PARAM_INT);
             $statement->execute();
-            var_dump($statement);
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-               echo "In here!";
                $id = $row["id"];
                $first = $row["first_name"];
                $last = $row["last_name"];
                $food_id = $row["food_type"];
-               var_dump($food_id);
-               var_dump($last);
-               var_dump($first);
-               var_dump($id);
 
                $fStatement = $db->prepare("SELECT * FROM w6_food WHERE id = $food_id");
                $fStatement->execute();
                var_dump($fStatement);
                while ($fRow = $fStatement->fetch(PDO::FETCH_ASSOC)){
-                  echo "Second while";
                   $food = $fRow['food'];
                }
                echo "<h1>$first $last's favorite food is $food</h1>";
