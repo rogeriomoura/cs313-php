@@ -20,6 +20,7 @@ try
 	$statement->bindValue(':last', $last);
 	$statement->bindValue(':food', $food);
 	$statement->execute();
+	echo "DEBUG";
 	
 	// SELECT c.relname FROM pg_class c WHERE c.relkind = 'S';   -- display all sequences
 	// get id of last inserted row - save in $userId
