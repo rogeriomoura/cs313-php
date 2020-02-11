@@ -22,6 +22,7 @@
                $fStatement = $db->prepare("SELECT * FROM w6_food WHERE id = $food_id");
                $fStatement->execute();
                while ($fRow = $fStatement->fetch(PDO::FETCH_ASSOC)){
+                  echo "Second while";
                   $food = $fRow['food'];
                }
                echo "<h1>$first $last's favorite food is $food</h1>";
