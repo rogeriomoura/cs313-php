@@ -26,7 +26,7 @@
                 <tr>
                     <td><?=$name?></td>
                     <td><?=$description?></td>
-                    <td><a href="<?=$image?>"></a></td>
+                    <td><img src="<?=$image?>" alt="image"></a></td>
                 </tr>
             <? }?>
     </table>
