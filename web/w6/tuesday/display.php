@@ -9,7 +9,7 @@
             echo $personId;
             $statement = $db->prepare('SELECT * FROM w6_user WHERE id = :personId');
             var_dump($statement);
-            $statement->bindValue(':personId', $personId);
+            $statement->bindValue(':personId', $personId, PDO::PARAM_INT);
             $statement->execute();
             var_dump($statement);
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
