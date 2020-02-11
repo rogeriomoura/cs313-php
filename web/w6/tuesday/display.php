@@ -13,6 +13,7 @@
             $statement->execute();
             var_dump($statement);
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+               echo "In here!";
                $id = $row["id"];
                $first = $row["first"];
                $last = $row["last"];
