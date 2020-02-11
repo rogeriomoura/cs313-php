@@ -21,6 +21,7 @@
 
                $fStatement = $db->prepare("SELECT * FROM w6_food WHERE id = $food_id");
                $fStatement->execute();
+               var_dump($fStatement);
                while ($fRow = $fStatement->fetch(PDO::FETCH_ASSOC)){
                   echo "Second while";
                   $food = $fRow['food'];
