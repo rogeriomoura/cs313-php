@@ -7,6 +7,7 @@
          <?php
             $personId = $_GET["personId"];
             $statement = $db->prepare('SELECT * FROM w6_user WHERE id = :personId');
+            echo $statement;
             $statement->bindValue(':personId', $personId);
             $statement->execute();
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
