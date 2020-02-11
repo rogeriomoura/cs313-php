@@ -70,10 +70,24 @@ ORDER BY COUNT(ep.id);
 
 
 -- \echo '6b. Which event had the most competitors? '
----------------- Your code here ----------------
+SELECT e.name, count(ep.id)
+FROM w5_EVENT e
+INNER JOIN w5_EVENT_PARTICIPANT ep ON ep.event_id = e.id
+GROUP BY e.name
+ORDER BY count(ep.event_id) DESC LIMIT 1;
 
 -- \echo '6c. Which event had the least competitors? '
----------------- Your code here ----------------
+SELECT e.name, count(ep.id)
+FROM w5_EVENT e
+INNER JOIN w5_EVENT_PARTICIPANT ep ON ep.event_id = e.id
+GROUP BY e.name
+ORDER BY count(ep.event_id) ASC LIMIT 1;
 
 -- \echo '6d. List all competitors that competed in the same event at least once '
----------------- Your code here ----------------
+SELECT p.name AS "Person" , e.name AS "Event", count(ep.id) AS "Count"
+FROM w5_PARTICIPANT p
+INNER JOIN w5_EVENT_PARTICIPANT ep ON ep.participant_id = p.id 
+INNER JOIN w5_EVENT e ON ep.event_id = e.id 
+GROUP BY p.name, e.name
+HAVING count(ep.id) > 1
+ORDER BY count(ep.id);

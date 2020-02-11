@@ -28,7 +28,7 @@
                     <td><?=$description?></td>
                     <td><img src="<?=$image?>" alt="image" style="width: 300px; height: auto;"></a></td>
                 </tr>
-            <? }?>
+         <? }?>
     </table>
 </body>
 </html>

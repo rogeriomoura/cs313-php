@@ -90,7 +90,7 @@
                     echo "</table>";
                 }
             ?>
-            <!-- <input type="button" value="Back" class="btn btn-primary" id="backButton"> -->
+            <input type="button" value="Back" class="btn btn-primary" id="backButton">
         </div>
     </div>
     <?php include "footer.php"; ?>
