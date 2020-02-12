@@ -22,6 +22,7 @@
         $scriptureId = $db->lastInsertId('scriptures_id_seq');
 
         foreach ($topics as $topic){
+            var_dump($topic);
             $stQuery = 'INSERT INTO scripture_topics (scripture_id, topic_id)
                         VALUES (:scriptureId, (SELECT id FROM topics WHERE name=\':topic\'))';
             $stQuery = $db->prepare($stQuery);
