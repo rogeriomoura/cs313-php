@@ -7,6 +7,8 @@
     $verse = $_POST['verse'];
     $content = $_POST['content'];
     $topics = $_POST['topic'];
+    $otherTopic = $_POST['otherTopic']; //name of the other topic
+    $other = $_POST['other']; //textBox
     //var_dump($topic);
     
     try 
@@ -28,6 +30,21 @@
             $stQuery->bindValue(':scriptureId', $scriptureId);
             $stQuery->bindValue(':topic', $topic_id);
             $stQuery->execute();
+        }
+
+        if (!empty($other)) {
+            $tQuery = 'INSERT INTO topics (name) VALUES (:otherTopic)';
+            $tStatement = $db->prepare($tQuery);
+            $tStatement->bindValue(':otherTopic', $otherTopic);
+            $tStatement->execute();
+
+            $topicId = $db->lastInsertId('topics_id_seq');
+            
+            $otQuery = 'INSERT INTO scripture_topics (scripture_id, topic_id)
+            VALUES (:scriptureId, (SELECT id FROM topics WHERE id=:topicId))';
+            $otStatement = $db->prepare($otQuery);
+            $otStatement->bindValue(':scriptureId', $scriptureId);
+            $otStatement->bindValue(':topicId', $topicId);
         }
     }
 
