@@ -39,12 +39,13 @@
             $tStatement->execute();
 
             $topicId = $db->lastInsertId('topics_id_seq');
-            
+
             $otQuery = 'INSERT INTO scripture_topics (scripture_id, topic_id)
             VALUES (:scriptureId, (SELECT id FROM topics WHERE id=:topicId))';
             $otStatement = $db->prepare($otQuery);
             $otStatement->bindValue(':scriptureId', $scriptureId);
             $otStatement->bindValue(':topicId', $topicId);
+            $otStatement->execute();
         }
     }
 
