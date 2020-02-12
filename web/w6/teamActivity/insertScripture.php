@@ -27,9 +27,7 @@
             $stQuery = $db->prepare($stQuery);
             $stQuery->bindValue(':scriptureId', $scriptureId);
             $stQuery->bindValue(':topic', $topic_id);
-            $statement->execute();
-            var_dump($statement);
-            echo "<br>Done inserting $topic_id";
+            $stQuery->execute();
         }
     }
 
@@ -39,6 +37,6 @@
         die();
     }
     
-    //header("Location: addScripture.php");
+    header("Location: addScripture.php");
     die();
 ?>
