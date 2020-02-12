@@ -31,6 +31,7 @@
             $stQuery->bindValue(':scriptureId', $scriptureId);
             $stQuery->bindValue(':topic', $topic_id);
             $statement->execute();
+            echo "Done inserting $topic_id";
         }
     }
 
