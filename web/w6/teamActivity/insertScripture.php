@@ -21,15 +21,15 @@
 
         $scriptureId = $db->lastInsertId('scriptures_id_seq');
 
-        foreach ($topics as $topic){
-            var_dump($topic);
+        foreach ($topics as $topic_id){
+            var_dump($topic_id);
             echo "<br>";
-            echo "This is topic: " . $topic . "<br>";
+            echo "This is topic: " . $topic_id . "<br>";
             $stQuery = 'INSERT INTO scripture_topics (scripture_id, topic_id)
-                        VALUES (:scriptureId, (SELECT id FROM topics WHERE name=\':topic\'))';
+                        VALUES (:scriptureId, (SELECT id FROM topics WHERE id=\':topic\'))';
             $stQuery = $db->prepare($stQuery);
             $stQuery->bindValue(':scriptureId', $scriptureId);
-            $stQuery->bindValue(':topic', $topic);
+            $stQuery->bindValue(':topic', $topic_id);
             $statement->execute();
         }
     }
