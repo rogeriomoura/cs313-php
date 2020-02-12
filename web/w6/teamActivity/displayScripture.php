@@ -6,7 +6,8 @@
             "SELECT s.book, s.chapter, s.verse, s.content, t.name
             FROM scriptures s
             INNER JOIN scripture_topics st ON s.id = st.scripture_id
-            INNER JOIN topics t ON t.id = st.topic_id";
+            INNER JOIN topics t ON t.id = st.topic_id
+            ORDER BY t.name";
     
     $statement = $db->prepare($query);
     $statement->execute();
