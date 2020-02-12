@@ -1,7 +1,6 @@
 <?php
 	require("../../dbConnect.php");
     $db = get_db();
-    $topic = $_POST['topic'];
 ?>
 
 <!DOCTYPE html>
