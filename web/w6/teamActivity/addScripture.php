@@ -28,7 +28,8 @@
                 $name = $row['name'];
                 echo "<input type='checkbox' name='topic[]' value='$id'> $name <br>";
             }
-            echo "<input type='checkbox' name='topic[]' value='other'><input type='text' name='otherTopic' id='otherTopic' placeholder='Other'>";
+            echo "<input type='checkbox' name='topic[]' value='other'>
+            <input type='text' name='otherTopic' id='otherTopic' placeholder='Other'>";
         ?>
         <input type="submit" name="submit" id="submit" value="Submit">
     </form>
