@@ -26,7 +26,7 @@
             echo "<br>";
             echo "This is topic: " . $topic_id . "<br>";
             $stQuery = 'INSERT INTO scripture_topics (scripture_id, topic_id)
-                        VALUES (:scriptureId, (SELECT id FROM topics WHERE id=\':topic\'))';
+                        VALUES (:scriptureId, (SELECT id FROM topics WHERE id=:topic))';
             $stQuery = $db->prepare($stQuery);
             $stQuery->bindValue(':scriptureId', $scriptureId);
             $stQuery->bindValue(':topic', $topic_id);
