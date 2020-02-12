@@ -55,6 +55,6 @@
         die();
     }
     
-    header("Location: displayScripture.php");
+    header("Location: addScripture.php");
     die();
 ?>
