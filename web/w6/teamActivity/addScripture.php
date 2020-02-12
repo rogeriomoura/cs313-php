@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <form action="" method="post">
+    <form action="insertScripture.php" method="post">
         Book: <input type="text" name="book"><br>
         Chapter: <input type="text" name="chapter"><br>
         Verse: <input type="text" name="verse"><br>
