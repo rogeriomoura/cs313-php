@@ -23,6 +23,8 @@
 
         foreach ($topics as $topic){
             var_dump($topic);
+            echo "<br>";
+            echo "This is topic: " . $topic . "<br>";
             $stQuery = 'INSERT INTO scripture_topics (scripture_id, topic_id)
                         VALUES (:scriptureId, (SELECT id FROM topics WHERE name=\':topic\'))';
             $stQuery = $db->prepare($stQuery);
