@@ -38,7 +38,7 @@
                 </form>
             </div>
             <div class="col">
-                <form action="" method="post">
+                <form action="" method="post" class="needs-validation container" novalidate>
                     <h3 class="centered">Create New User</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
