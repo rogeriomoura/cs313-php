@@ -56,6 +56,11 @@
                         <label for="contact">Contact:</label>
                         <input class="form-control" type="text" name="contact" id="contact">
                     </div>
+                    <div class="form-row">
+                        <p>Are you a DRIVER or a RIDER?</p><br>
+                        <input type="radio" name="type" id="driver"><label for="driver">Driver</label>
+                        <input type="radio" name="type" id="rider"><label for="rider">Rider</label>
+                    </div>
                     <div class="text-center">
                         <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
                     </div>
