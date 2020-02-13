@@ -21,13 +21,15 @@
         <h1 class="centered">Welcome to Ride Board</h1>
         <div class="row p-3">
             <div class="col">
-                <form action="" method="POST" class="needs-validation container-fluid" novalidate>
+                <form action="" method="POST" class="needs-validation container" novalidate>
                     <h3 class="centered">Login</h3>
                     <div class="form-row">
-                        <label for="username">Username:</label><input class="form-control" type="text" name="username" id="username">
+                        <label for="username">Username:</label>
+                        <input class="form-control" type="text" name="username" id="username">
                     </div>
                     <div class="form-row">
-                        <label for="password">Password:</label><input class="form-control" type="password" name="password" id="password">
+                        <label for="password">Password:</label>
+                        <input class="form-control" type="password" name="password" id="password">
                     </div>
                     <br>
                     <div class="text-center">
@@ -35,7 +37,27 @@
                     </div>
                 </form>
             </div>
-            <div class="col"></div>
+            <div class="col">
+                <form action="" method="post">
+                    <h3 class="centered">Create New User</h3>
+                    <div class="form-row">
+                        <label for="username">Username:</label>
+                        <input class="form-control" type="text" name="username" id="username">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input class="form-control" type="password" name="password" id="password">
+                    </div>
+                    <div class="form-row">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input class="form-control" type="password" name="cPassword" id="cPassword">
+                    </div>
+                    <div class="form-row">
+                        <label for="contact">Contact:</label>
+                        <input class="form-control" type="text" name="contact" id="contact">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <?php include 'footer.php'; ?>
