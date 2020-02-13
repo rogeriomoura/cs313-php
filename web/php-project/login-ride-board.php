@@ -18,11 +18,11 @@
         <h1 class="centered">Welcome to Ride Board</h1>
         <div class="row p-3">
             <div class="col">
-                <form action="" method="POST">
-                    <div class="row">
+                <form action="" method="POST" class="needs-validation" novalidate>
+                    <div class="form-row">
                         <label for="username">Username:</label> <input type="text" name="username" id="username">
                     </div>
-                    <div class="row">
+                    <div class="form-row">
                         <label for="password">Password:</label> <input type="password" name="password" id="password">
                     </div>
                 </form>
