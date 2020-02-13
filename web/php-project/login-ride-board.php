@@ -22,6 +22,7 @@
         <div class="row p-3">
             <div class="col">
                 <form action="" method="POST" class="needs-validation" novalidate>
+                    <h3 class="centered">Login</h3>
                     <div class="form-row">
                         <label for="username">Username:</label><input class="form-control" type="text" name="username" id="username">
                     </div>
