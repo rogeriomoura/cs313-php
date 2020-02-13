@@ -57,7 +57,7 @@
                         <input class="form-control" type="text" name="contact" id="contact">
                     </div>
                     <div>
-                        <p>Are you a DRIVER or a RIDER?</p><br><br>
+                        <p>Are you a DRIVER or a RIDER?</p>
                         <input type="radio" name="type" id="driver"><label for="driver">Driver</label><br>
                         <input type="radio" name="type" id="rider"><label for="rider">Rider</label>
                     </div>
