@@ -60,7 +60,7 @@
                         <p>Are you a DRIVER or a RIDER?</p>
                         <input type="radio" class="form-check-input" required name="type" id="driver"><label class="form-check-label" for="driver">Driver</label>                        
                         <br>
-                        <input type="radio" class="form-check-input" required name="type" id="rider"><label class="form-check-label" for="rider">Rider</label>
+                        <input type="radio" required name="type" id="rider"><label class="form-check-label" for="rider">Rider</label>
                     </div>
                     <div class="text-center">
                         <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
