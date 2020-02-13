@@ -56,6 +56,9 @@
                         <label for="contact">Contact:</label>
                         <input class="form-control" type="text" name="contact" id="contact">
                     </div>
+                    <div class="text-center">
+                        <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
+                    </div>
                 </form>
             </div>
         </div>
