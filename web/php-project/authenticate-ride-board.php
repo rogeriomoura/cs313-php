@@ -1,10 +1,17 @@
 <?php
     session_start();
-	require("dbConnect.php");
-	$db = get_db();
 
-    $personId = $_GET["personId"];
-    $statement = $db->prepare('SELECT * FROM w6_user WHERE id = :personId');
+	require("dbConnect.php");
+    $db = get_db();
+
+    $_SESSION["loggedIn"];
+    $_SESSION["username"];
+    $_SESSION["contact"];
+
+    $username = htmlspecialchars($_POST["username"]);
+    $password = htmlspecialchars($_POST["password"]);
+
+    $statement = $db->prepare('SELECT id FROM user WHERE id = :personId');
     $statement->bindValue(':personId', $personId, PDO::PARAM_INT);
     $statement->execute();
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)){

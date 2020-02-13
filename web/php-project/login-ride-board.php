@@ -18,7 +18,7 @@
         <h1 class="centered">Welcome to Ride Board</h1>
         <div class="row p-3">
             <div class="col">
-                <form action="" method="POST" class="needs-validation container" novalidate>
+                <form action="authenticate-ride-board.php" method="POST" class="needs-validation container" novalidate>
                     <h3 class="centered">Login</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
