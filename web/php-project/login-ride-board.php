@@ -56,15 +56,13 @@
                         <label for="contact">Contact:</label>
                         <input class="form-control" type="text" name="contact" id="contact" placeholder="Email or Phone #" required>
                     </div>
-                    <div class="container">
+                    <div>
                         <p>Are you a DRIVER or a RIDER?</p>
                         <label class="form-check-label" for="driver">
                             <input type="radio" class="form-check-input" required name="type" id="driver">Driver
                         </label>
                         <br>
-                        <label class="form-check-label" for="rider">
-                            <input type="radio" class="form-check-input" required name="type" id="rider">Rider
-                        </label>
+                        <input type="radio" class="form-check-input" required name="type" id="rider"><label class="form-check-label" for="rider">Rider</label>
                     </div>
                     <div class="text-center">
                         <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
