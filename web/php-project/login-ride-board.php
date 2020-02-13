@@ -58,7 +58,7 @@
                     </div>
                     <div>
                         <p>Are you a DRIVER or a RIDER?</p><br><br>
-                        <input type="radio" name="type" id="driver"><label for="driver">Driver</label>
+                        <input type="radio" name="type" id="driver"><label for="driver">Driver</label><br>
                         <input type="radio" name="type" id="rider"><label for="rider">Rider</label>
                     </div>
                     <div class="text-center">
