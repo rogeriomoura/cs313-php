@@ -56,7 +56,7 @@
                         <label for="contact">Contact:</label>
                         <input class="form-control" type="text" name="contact" id="contact" placeholder="Email or Phone #" required>
                     </div>
-                    <div class="row">
+                    <div class="container">
                         <p>Are you a DRIVER or a RIDER?</p>
                         <label class="form-check-label" for="driver">
                             <input type="radio" class="form-check-input" required name="type" id="driver">Driver
