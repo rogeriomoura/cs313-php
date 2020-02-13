@@ -30,7 +30,7 @@
                         <label for="password">Password:</label><input class="form-control" type="password" name="password" id="password">
                     </div>
                     <br>
-                    <div class="mx-auto">
+                    <div class="text-center">
                         <input type="submit" value="Login" class="btn btn-primary" name="loginButton">
                     </div>
                 </form>
