@@ -21,15 +21,15 @@
         <h1 class="centered">Welcome to Ride Board</h1>
         <div class="row p-3">
             <div class="col">
-                <form action="" method="POST" class="needs-validation" novalidate>
+                <form action="" method="POST" class="needs-validation container" novalidate>
                     <h3 class="centered">Login</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
-                        <input class="form-control" type="text" name="username" id="username">
+                        <input class="form-control" type="text" name="username" id="username" required>
                     </div>
                     <div class="form-row">
                         <label for="password">Password:</label>
-                        <input class="form-control" type="password" name="password" id="password">
+                        <input class="form-control" type="password" name="password" id="password" required>
                     </div>
                     <br>
                     <div class="text-center">
@@ -42,19 +42,19 @@
                     <h3 class="centered">Create New User</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
-                        <input class="form-control" type="text" name="username" id="username">
+                        <input class="form-control" type="text" name="username" id="username" required>
                     </div>
                     <div class="form-row">
                         <label for="password">Password:</label>
-                        <input class="form-control" type="password" name="password" id="password">
+                        <input class="form-control" type="password" name="password" id="password" required>
                     </div>
                     <div class="form-row">
                         <label for="confirmPassword">Confirm Password:</label>
-                        <input class="form-control" type="password" name="cPassword" id="cPassword">
+                        <input class="form-control" type="password" name="cPassword" id="cPassword" required>
                     </div>
                     <div class="form-row">
                         <label for="contact">Contact:</label>
-                        <input class="form-control" type="text" name="contact" id="contact">
+                        <input class="form-control" type="text" name="contact" id="contact" placeholder="Email or Phone #" required>
                     </div>
                     <div>
                         <p>Are you a DRIVER or a RIDER?</p>
