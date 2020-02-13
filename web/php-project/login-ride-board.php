@@ -58,8 +58,13 @@
                     </div>
                     <div>
                         <p>Are you a DRIVER or a RIDER?</p>
-                        <input type="radio" required name="type" id="driver"><label for="driver">Driver</label><br>
-                        <input type="radio" required name="type" id="rider"><label for="rider">Rider</label>
+                        <label class="form-check-label" for="driver">
+                            <input type="radio" class="form-check-input" required name="type" id="driver">Driver
+                        </label>
+                        <br>
+                        <label class="form-check-label" for="rider">
+                            <input type="radio" class="form-check-input" required name="type" id="rider">Rider
+                        </label>
                     </div>
                     <div class="text-center">
                         <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
