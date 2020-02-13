@@ -21,7 +21,7 @@
         <h1 class="centered">Welcome to Ride Board</h1>
         <div class="row p-3">
             <div class="col">
-                <form action="" method="POST" class="needs-validation container" novalidate>
+                <form action="" method="POST" class="needs-validation" novalidate>
                     <h3 class="centered">Login</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
@@ -58,8 +58,8 @@
                     </div>
                     <div>
                         <p>Are you a DRIVER or a RIDER?</p>
-                        <input type="radio" name="type" id="driver"><label for="driver">Driver</label><br>
-                        <input type="radio" name="type" id="rider"><label for="rider">Rider</label>
+                        <input type="radio" required name="type" id="driver"><label for="driver">Driver</label><br>
+                        <input type="radio" required name="type" id="rider"><label for="rider">Rider</label>
                     </div>
                     <div class="text-center">
                         <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
