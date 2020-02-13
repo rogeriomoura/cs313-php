@@ -21,7 +21,7 @@
         <h1 class="centered">Welcome to Ride Board</h1>
         <div class="row p-3">
             <div class="col">
-                <form action="" method="POST" class="needs-validation" novalidate>
+                <form action="" method="POST" class="needs-validation container-fluid" novalidate>
                     <h3 class="centered">Login</h3>
                     <div class="form-row">
                         <label for="username">Username:</label><input class="form-control" type="text" name="username" id="username">
