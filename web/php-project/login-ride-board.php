@@ -23,7 +23,7 @@
                         <label for="username">Username:</label> <input class="form-control" type="text" name="username" id="username">
                     </div>
                     <div class="form-row">
-                        <label for="password">Password:</label> <input class="form-control" type="password" name="password" id="password">
+                        <label class="centered" for="password">Password:</label> <input class="form-control" type="password" name="password" id="password">
                     </div>
                 </form>
             </div>
