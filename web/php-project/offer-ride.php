@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    require "../dbConnect.php";
+    $db = get_db();
+
+    $_SESSION["cityTo"];
+    $_SESSION["cityFrom"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
