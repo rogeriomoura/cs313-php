@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +23,10 @@
             <div class="col">
                 <form action="" method="POST" class="needs-validation" novalidate>
                     <div class="form-row">
-                        <label for="username">Username:</label> <input class="form-control" type="text" name="username" id="username">
+                        <label for="username">Username:</label><input class="form-control" type="text" name="username" id="username">
                     </div>
                     <div class="form-row">
-                        <label class="centered" for="password">Password:</label> <input class="form-control" type="password" name="password" id="password">
+                        <label for="password">Password:</label><input class="form-control" type="password" name="password" id="password">
                     </div>
                 </form>
             </div>
