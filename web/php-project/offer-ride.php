@@ -28,7 +28,7 @@
         <div class="container">
             <h1>Offering a Ride</h1>
             <h2>Please fill the information bellow, all fields are required!</h2>
-            <form action="regiter-ride.php" method="post" class="needs-validation" novalidate>
+            <form action="register-ride.php" method="post" class="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col">
                         <label for="cFrom">City from:</label><br>
