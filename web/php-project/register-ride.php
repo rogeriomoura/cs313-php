@@ -16,7 +16,7 @@
         
         $statement = $db->prepare(
             'INSERT INTO rides (cityfrom, cityto, seats, date, time, price, driver_id)
-             VALUES (:cFrom, :cTo, :seats, :price, :date, :time, (SELECT id FROM user_driver WHERE username = :username))');
+             VALUES (:cFrom, :cTo, :seats, :date, :time, :price, (SELECT id FROM user_driver WHERE username = :username))');
         $statement->bindValue(':cFrom', $cFrom);
         $statement->bindValue(':cTo', $cTo);
         $statement->bindValue(':seats', $seats);
