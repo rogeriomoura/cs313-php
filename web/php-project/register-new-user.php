@@ -14,16 +14,31 @@
             $contact = htmlspecialchars($_POST["contact"]);
             $type = $_POST["type"];
             
-            $statement = $db->prepare(
-                'INSERT INTO user_:type (username, password, contact) VALUES (:username, :password, :contact)');
-            $statement->bindValue(':type', $type);
-            $statement->bindValue(':username', $username);
-            $statement->bindValue(':password', $password);
-            $statement->bindValue(':contact', $contact);
-            $statement->execute();
+            if ($type = "driver") {
+                $statement = $db->prepare(
+                    'INSERT INTO user_driver (username, password, contact) VALUES (:username, :password, :contact)');
+                $statement->bindValue(':username', $username);
+                $statement->bindValue(':password', $password);
+                $statement->bindValue(':contact', $contact);
+                $statement->execute();
 
-            $_SESSION["loggedIn"] = true;
-            $_SESSION["username"] = $username;
+                $_SESSION["loggedIn"] = true;
+                $_SESSION["username"] = $username;
+            }
+            else if ($type = "rider") {
+                $statement = $db->prepare(
+                    'INSERT INTO user_rider (username, password, contact) VALUES (:username, :password, :contact)');
+                $statement->bindValue(':username', $username);
+                $statement->bindValue(':password', $password);
+                $statement->bindValue(':contact', $contact);
+                $statement->execute();
+
+                $_SESSION["loggedIn"] = true;
+                $_SESSION["username"] = $username;
+            }
+            else {
+                throw "Type doesn't match";
+            }
         }
         catch (Exception $ex) {
 	        echo "Error with DB. Details: $ex";
