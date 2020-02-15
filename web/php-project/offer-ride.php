@@ -29,16 +29,6 @@
             <form action="" method="post" class="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col">
-                        <label for="name">Name:</label><br>
-                        <input class="form-control" type="text" name="name" id="name" required placeholder="John Doe"><br>
-                    </div>
-                    <div class="col">
-                        <label for="contact">Contact:</label><br>
-                        <input class="form-control" type="text" name="contact" id="contact" required placeholder="Phone number or Email"><br>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
                         <label for="cFrom">City from:</label><br>
                         <input class="form-control" type="text" name="cFrom" id="cFrom" required placeholder="Rexburg"><br>
                     </div>
