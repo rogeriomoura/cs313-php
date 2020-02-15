@@ -1,10 +1,12 @@
 <?php
     session_start();
+
     require "../dbConnect.php";
     $db = get_db();
 
-    $_SESSION["cityTo"];
-    $_SESSION["cityFrom"];
+    if ($_SESSION["loggedIn"] != true) {
+        header("Location: login-ride-board.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
