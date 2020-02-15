@@ -28,16 +28,14 @@
     while ($rRow = $rider_statement->fetch(PDO::FETCH_ASSOC)){
         $rider_id = $rRow["id"];
     }
-    var_dump($rider_id);
-    var_dump($driver_id);
 
     if ($rider_id > 0 || $driver_id > 0 ){
-        $_SESSIOM["loggedIn"] = true;
+        $_SESSION["loggedIn"] = true;
         $_SESSION["username"] = $username;
-        $_SESSIOM["password"] = $password;
+        $_SESSION["password"] = $password;
     }
 
-    $message = "wrong answer";
-    echo "<script type='text/javascript'>alert('$message');</script>";
-    //header("Location: ride-board.php");
+    // $message = "wrong answer";
+    // echo "<script type='text/javascript'>alert('$message');</script>";
+    header("Location: ride-board.php");
 ?>
