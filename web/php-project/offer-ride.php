@@ -1,6 +1,6 @@
 <?php
     session_start();
-    
+
     require "../dbConnect.php";
     $db = get_db();
 
@@ -28,7 +28,7 @@
         <div class="container">
             <h1>Offering a Ride</h1>
             <h2>Please fill the information bellow, all fields are required!</h2>
-            <form action="" method="post" class="needs-validation" novalidate>
+            <form action="regiter-ride.php" method="post" class="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col">
                         <label for="cFrom">City from:</label><br>
@@ -64,15 +64,14 @@
                     <div class="col">
                         <label for="time">Time of departure:</label><br>
                         <select class="form-control" name="time" id="time" required><br>
-                            <option value="6a">06:00 AM</option>
-                            <option value="6:30a">06:30 AM</option>
-                            <option value="7a">07:00 AM</option>
-                            <option value="7:30a">07:30 AM</option>
-                            <option value="6p" selected>06:00 PM</option>
-                            <option value="6:30p">06:30 PM</option>
-                            <option value="7p">07:00 PM</option>
-                            <option value="7:30p">07:30 PM</option>
-                            <option value="tbd">TBD</option>
+                            <option value="06:00:00">06:00 AM</option>
+                            <option value="06:30:00">06:30 AM</option>
+                            <option value="07:00:00">07:00 AM</option>
+                            <option value="07:30:00">07:30 AM</option>
+                            <option value="18:00:00" selected>06:00 PM</option>
+                            <option value="18:30:00">06:30 PM</option>
+                            <option value="19:00:00">07:00 PM</option>
+                            <option value="19:30:00">07:30 PM</option>
                         </select>
                     </div>
                 </div>
