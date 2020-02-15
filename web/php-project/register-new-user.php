@@ -16,6 +16,7 @@
             
             $statement = $db->prepare(
                 'INSERT INTO user_:type (username, password, contact) VALUES (:username, :password, :contact)');
+            $statement->bindValue(':type', $type);
             $statement->bindValue(':username', $username);
             $statement->bindValue(':password', $password);
             $statement->bindValue(':contact', $contact);
