@@ -4,30 +4,33 @@
 	require("dbConnect.php");
     $db = get_db();
 
+    $username = $_SESSION["username"];
+
     try {
         $cFrom = htmlspecialchars($_POST["cFrom"]);
         $cTo = htmlspecialchars($_POST["cTo"]);
         $seats = htmlspecialchars($_POST["seats"]);
         $price = htmlspecialchars($_POST["price"]);
         $date = htmlspecialchars($_POST["date"]);
-        var_dump($date);
         $time = htmlspecialchars($_POST["time"]);
         
-        // $statement = $db->prepare(
-        //     'INSERT INTO user_rider (username, password, contact) VALUES (:username, :password, :contact)');
-        // $statement->bindValue(':username', $username);
-        // $statement->bindValue(':password', $password);
-        // $statement->bindValue(':contact', $contact);
-        // $statement->execute();
-
-        // $_SESSION["loggedIn"] = true;
-        // $_SESSION["username"] = $username;
+        $statement = $db->prepare(
+            'INSERT INTO rides (cityfrom, cityto, seats, date, time, price, driver_id)
+             VALUES (:cFrom, :cTo, :seats, :price, :date, :time, (SELECT id FROM user_driver WHERE username = :username))');
+        $statement->bindValue(':cFrom', $cFrom);
+        $statement->bindValue(':cTo', $cTo);
+        $statement->bindValue(':seats', $seats);
+        $statement->bindValue(':price', $price);
+        $statement->bindValue(':date', $date);
+        $statement->bindValue(':time', $time);
+        $statement->bindValue(':username', $username);
+        $statement->execute();
     }
     catch (Exception $ex) {
         echo "Error with DB. Details: $ex";
         die();
     }
     
-    //header("Location: ride-board.php");
+    header("Location: ride-board.php");
     die();
 ?>
