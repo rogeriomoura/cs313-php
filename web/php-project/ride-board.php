@@ -1,5 +1,9 @@
 <?php
     session_start();
+
+    if ($_SESSION["loggedIn"] != true) {
+        header("Location: login-ride-board.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

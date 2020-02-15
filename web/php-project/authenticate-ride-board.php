@@ -11,20 +11,29 @@
     $username = htmlspecialchars($_POST["username"]);
     $password = htmlspecialchars($_POST["password"]);
 
-    $statement = $db->prepare('SELECT id FROM user WHERE id = :personId');
-    $statement->bindValue(':personId', $personId, PDO::PARAM_INT);
-    $statement->execute();
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-        $id = $row["id"];
-        $first = $row["first_name"];
-        $last = $row["last_name"];
-        $food_id = $row["food_type"];
+    $driver_statement = $db->prepare('SELECT id FROM user_driver WHERE username = :username AND password = :password');
+    $driver_statement->bindValue(':username', $username);
+    $driver_statement->bindValue(':password', $password);
+    $driver_statement->execute();
 
-        $fStatement = $db->prepare("SELECT * FROM w6_food WHERE id = $food_id");
-        $fStatement->execute();
-        while ($fRow = $fStatement->fetch(PDO::FETCH_ASSOC)){
-            $food = $fRow['food'];
-        }
-        echo "<h1>$first $last's favorite food is $food</h1>";
+    while ($dRow = $driver_statement->fetch(PDO::FETCH_ASSOC)){
+        $driver_id = $dRow["id"];
     }
-    ?>
+
+    $rider_statement = $db->prepare('SELECT id FROM user_rider WHERE username = :username AND password = :password');
+    $rider_statement->bindValue(':username', $username);
+    $rider_statement->bindValue(':password', $password);
+    $rider_statement->execute();
+
+    while ($rRow = $rider_statement->fetch(PDO::FETCH_ASSOC)){
+        $rider_id = $rRow["id"];
+    }
+
+    if ($rider_id > 0 || $driver_id > 0 ){
+        $_SESSIOM["loggedIn"] = true;
+        $_SESSION["username"] = $username;
+        $_SESSIOM["password"] = $password;
+    }
+
+    header("Location: ride-board.php");
+?>
