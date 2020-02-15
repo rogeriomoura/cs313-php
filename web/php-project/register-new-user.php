@@ -14,12 +14,15 @@
             $contact = htmlspecialchars($_POST["contact"]);
             $type = $_POST["type"];
             
-            $statement = $db->prepare('INSERT INTO user_:type (username, password, contact)
-                                    VALUES (:username, :password, :contact)');
+            $statement = $db->prepare(
+                'INSERT INTO user_:type (username, password, contact) VALUES (:username, :password, :contact)');
             $statement->bindValue(':username', $username);
             $statement->bindValue(':password', $password);
             $statement->bindValue(':contact', $contact);
             $statement->execute();
+
+            $_SESSION["loggedIn"] = true;
+            $_SESSION["username"] = $username;
         }
         catch (Exception $ex) {
 	        echo "Error with DB. Details: $ex";
