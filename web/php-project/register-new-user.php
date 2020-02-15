@@ -10,7 +10,8 @@
     else {
         try {
             $username = htmlspecialchars($_POST["username"]);
-            $password = htmlspecialchars($_POST["password"]);
+            $passw = htmlspecialchars($_POST["password"]);
+            $password = md5($pass);
             $contact = htmlspecialchars($_POST["contact"]);
             $type = $_POST["type"];
             
