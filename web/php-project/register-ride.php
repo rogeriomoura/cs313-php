@@ -28,6 +28,6 @@
         die();
     }
     
-    header("Location: ride-board.php");
+    //header("Location: ride-board.php");
     die();
 ?>
