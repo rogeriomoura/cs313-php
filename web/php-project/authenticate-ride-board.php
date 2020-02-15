@@ -6,7 +6,6 @@
 
     $_SESSION["loggedIn"];
     $_SESSION["username"];
-    $_SESSION["contact"];
 
     $username = htmlspecialchars($_POST["username"]);
     $password = htmlspecialchars($_POST["password"]);
@@ -32,8 +31,7 @@
     if ($rider_id > 0 || $driver_id > 0 ){
         $_SESSION["loggedIn"] = true;
         $_SESSION["username"] = $username;
-        $_SESSION["password"] = $password;
     }
-    
+
     header("Location: ride-board.php");
 ?>

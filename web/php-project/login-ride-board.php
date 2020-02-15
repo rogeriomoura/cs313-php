@@ -35,7 +35,7 @@
                 </form>
             </div>
             <div class="col">
-                <form action="" method="post" class="needs-validation container" novalidate>
+                <form action="register-new-user.php" method="post" class="needs-validation container" novalidate>
                     <h3 class="centered">Create New User</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
@@ -55,9 +55,9 @@
                     </div>
                     <div>
                         <p>Are you a DRIVER or a RIDER?</p>
-                        <input type="radio" required name="type" id="driver"> <label class="form-check-label" for="driver">Driver</label>                        
+                        <input type="radio" required name="type" value="driver"> <label class="form-check-label" for="driver">Driver</label>                        
                         <br>
-                        <input type="radio" required name="type" id="rider"> <label class="form-check-label" for="rider">Rider</label>
+                        <input type="radio" required name="type" value="rider"> <label class="form-check-label" for="rider">Rider</label>
                     </div>
                     <div class="text-center">
                         <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
