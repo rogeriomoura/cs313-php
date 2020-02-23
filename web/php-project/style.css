@@ -28,7 +28,6 @@
     transform: translateY(4px);
 }
 
-body {
-    min-height: 400px;
-    margin-bottom: 100px;
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
 }
