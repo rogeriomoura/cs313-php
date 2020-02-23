@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Ride Board</title>
 </head>
-<body>
+<body class="wrapper">
     <?php include 'header.php'; ?>
     <div>
         <h1 class="centered">Welcome to Ride Board</h1>
@@ -66,6 +66,7 @@
             </div>
         </div>
     </div>
+    <div class="push"></div>
     <?php include 'footer.php'; ?>
 </body>
 </html>
