@@ -27,3 +27,7 @@
 .buttonBox:active {
     transform: translateY(4px);
 }
+
+body {
+    margin-bottom: 100px;
+}
