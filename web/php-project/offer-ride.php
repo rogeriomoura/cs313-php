@@ -24,7 +24,7 @@
 </head>
 <body>
     <?php include "header.php"; ?>
-    <div class="p-3">
+    <div class="p-3 wrapper">
         <div class="container">
             <h1>Offering a Ride</h1>
             <h2>Please fill the information bellow, all fields are required!</h2>
