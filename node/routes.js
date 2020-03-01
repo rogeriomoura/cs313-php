@@ -5,7 +5,7 @@ const requestHandler = (req, res) => {
     const method = req.method;
     if (url === '/') {
         res.write('<html>');
-        res.write('<head><title>Enter Message</title></head>');
+        res.write('<head><title>Enter</title></head>');
         res.write('<body><form action="/message" method="POST"><input name="message" type="text"><button type="submit">Send</button></form></body>');
         res.write('</html>');
         return res.end();
@@ -37,15 +37,7 @@ const requestHandler = (req, res) => {
     res.end();
 };
 
-//module.exports = requestHandler;
-
-// module.exports = {
-//     handler: requestHandler,
-//     someText: 'Some hardcoded text'
-// };
-
-// module.exports.handler = requestHandler;
-// module.exports.someText = 'Some hardcoded text!';
-
-exports.handler = requestHandler;
-exports.someText = 'Some hardcoded text!';
+module.exports = {
+    handler: requestHandler,
+    someText: 'Some hardcoded text'
+};
