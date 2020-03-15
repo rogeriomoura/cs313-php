@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/products.css">
+</head>
+
+<body>
+    <main>
+        <form method="POST" action="/shopFiltered" class="form-control">
+            <input type="text" name="searchInput">
+            <button type="submit" class="btn">Search</button>
+        </form>
+        <% if (prods.length > 0) { %>
+            
+            <div class="grid">
+                <%  for (let product of prods) { 
+                        let found = false;
+                        for (let tag of product.tags) {
+                            if (searchInput == tag) {
+                                found = true;
+                            }
+                        }
+                        if (found) { %>
+                            <article class="card product-item">
+                                <header class="card__header">
+                                    <h1 class="product__title"><%= product.name %></h1>
+                                </header>
+                                <div class="card__image">
+                                    <img src="<%= product.imageUrl %>"
+                                        alt="A Book">
+                                </div>
+                                <div class="card__content">
+                                    <h2 class="product__price">$<%= product.price %></h2>
+                                    <p class="product__description"><%= product.description %></p>
+                                </div>
+                            </article>
+                    <%  }
+                    } %>
+            </div>
+        <% } else { %>
+            <h1>No Products Found!</h1>
+        <% } %>
+    </main>
+</body>
+</html>
