@@ -14,6 +14,7 @@
 </head>
 <body>
     <h1>Add some scriptures to this amazing table with PHP!</h1>
+    <p>The purpose of this assignment is not to look good but to work properly.</p>
     <form action="insertScripture.php" method="post">
         Book: <input type="text" name="book"><br>
         Chapter: <input type="text" name="chapter"><br>

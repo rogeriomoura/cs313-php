@@ -4,6 +4,7 @@
 	$db = get_db();
 ?>
 <body>
+   <h1>Inserting data into a database then displaying it back to the user.</h1>
    <div class="container" style="margin-top:50px;">
       <form action="insert.php" method="POST">
          <div class="form-row">

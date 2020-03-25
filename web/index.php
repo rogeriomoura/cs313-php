@@ -19,7 +19,7 @@
       <div class="row">
         <a class="col shadow centered buttonBox border" href="assignments.php">Assignments</a>
         <a class="col shadow centered buttonBox border" href="Rogerio-Moura-resume.pdf">Resume</a>
-        <a class="col shadow centered buttonBox border" href="/php-project/login-ride-board.php">Ride Share</a>
+        <a class="col shadow centered buttonBox border" href="/php-project/login-ride-board.php">Project: Ride Share</a>
       </div>
       <div class="container-fluid centered">
         <h1 class="p-3">Rio & Kristen</h1>

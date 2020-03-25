@@ -17,7 +17,7 @@
     <div class="row">
         <a class="col shadow centered buttonBox border" href="index.php">Home</a>
         <a class="col shadow centered buttonBox border" href="Rogerio-Moura-resume.pdf">Resume</a>
-        <a class="col shadow centered buttonBox border" href="/php-project/ride-share.php">Ride Share</a>
+        <a class="col shadow centered buttonBox border" href="/php-project/ride-share.php">Project: Ride Share</a>
       </div>
     <div class="container-fluid centered">
         <h3>What assignment are you looking for?</h3>
@@ -25,10 +25,12 @@
         <ul>
           <li><a href="w1/hello.html">Hello World Page</a></li>
           <li><a href="w3/browse-items.php">Shopping Cart Mockup</a></li>
-          <li><a href="w3/thursdayClassTemp/thursday.php">Working With Cookies</a></li>
+          <li><a href="w6/tuesday/index.php">Inserting into database</a></li>
+          <!-- <li><a href="w3/thursdayClassTemp/thursday.php">Working With Cookies</a></li> -->
           <li><a href="shared/index.html">Team Activity Week 1</a></li>
           <li><a href="shared/ta02.php">Team Activity Week 2</a></li>
           <li><a href="shared/w5team.php">Team Activity Week 5</a></li>
+          <li><a href="w6/teamActivity/addScripture.php">Team Activity Week 6</a></li>
         </ul>
       </div>
 </body>
