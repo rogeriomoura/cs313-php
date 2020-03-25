@@ -25,6 +25,7 @@
         <ul>
           <li><a href="w1/hello.html">Hello World Page</a></li>
           <li><a href="shared/index.html">Team Activity Week 1</a></li>
+          <li><a href="shared/ta02.php">Team Activity Week 2</a></li>
         </ul>
       </div>
 </body>

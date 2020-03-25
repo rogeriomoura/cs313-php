@@ -12,6 +12,8 @@
 </head>
 <body>
 <h1>Scripture Resources</h1>
+<p>Enter a book like John, D&C, D&C, Mosiah or Moroni.</p>
+<p>The idea here is to query data back from a database.</p>
 
 <form method="post">
     <input type="text" name="bookName" id="bookName">
